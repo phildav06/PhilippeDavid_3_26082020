@@ -14,53 +14,62 @@
 
         <!-- <img src="images/logo/ohmyfood.png" alt="ohmyfood" srcset="images/logo/ohmyfood@2x.svg"> -->
         <h1>ohmyfood</h1>
-        <div class="location">
+        <div class="heading_location">
             <p><img src="images/icons/map-marker-alt-solid.svg" alt="Paris, Belleville" class="icon_location">Paris, Belleville</p>
         </div>
 
-        <h2 class="header_title">Book the menu you like</h2>
+        <h2 class="heading_title">Book the menu you like</h2>
 
         <p>Discover top-of-the-art restaurants we <br>picked for you</p>
 
-        <button class="btn_header"><strong>Explore our restaurants</strong></button>
+        <button class="heading_btn"><strong>Explore our restaurants</strong></button>
     </header>
 
     <main>
     <!--contient l'ensemble des sections-->
-        <section class="how_it_works">
+        <section class="how"><!--how_it_works-->
         <!--c'est l'explication du fonctionnement du site-->
-            <h3 class="title">How it works</h3>
-            <div class="numb">1</div><button class="btn_chose"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon"><strong>Chose a restaurant</strong></button>
+            <h3 class="how__title">How it works</h3>
 
-            <div class="numb">2</div><button class="btn_create"><img src="images/icons/list-ul-solid.svg" alt="liste icon"><strong>Create your menu</strong></button>
+            <!--bouton chose-->
+            <div class="how__numb"><div>1</div><button class="how__btn how__btn--hover"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon"><strong>Chose a restaurant</strong></button></div>
 
-            <div class="numb">3</div><button class="btn_go"><img src="images/icons/store-solid.svg" alt="store icon"><strong>Go enjoy it at the restaurant</strong></button>
+            <!--bouton create-->
+            <div class="how__numb"><div>2</div><button class="how__btn how__btn--hover"><img src="images/icons/list-ul-solid.svg" alt="liste icon"><strong>Create your menu</strong></button></div>
+
+            <!--bouton go enjoy-->
+            <div class="how__numb"><div>3</div><button class="how__btn how__btn--hover"><img src="images/icons/store-solid.svg" alt="store icon"><strong>Go enjoy it at the restaurant</strong></button></div>
         </section>
 
-        <section class="restaurants">
+        <section class="resto">
         <!--contient l'ensemble des restaurants-->
-            <h4 class="title">Restaurants</h4>
-            <article class="resto1">
-                <a href="menu_the_full_palette.html"><img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette"><div class="new">New</div></a>
-                <h3 class="article_title">The Full Palette</h3>
+            <h4 class="resto__title">Restaurants</h4>
+
+            <!--resto 1-->
+            <article class="resto__carte">
+                <a href="menu_the_full_palette.html"><img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette"><aside class="new">New</aside></a>
+                <h3 class="resto__subtitle">The Full Palette</h3>
                 <p>New York</p>
             </article>
 
-            <article class="resto2">
+            <!--resto 2-->
+            <article class="resto__carte">
                 <a href="menu_the_enchanted_plate.html"><img src="images/restaurants/the_enchanted_plate.jpg" alt="The Enchanted Plate"><div class="new">New</div></a>
-                <h4 class="article_title">The Enchanted Plate</h4>
+                <h4 class="resto__subtitle">The Enchanted Plate</h4>
                 <p>New York</p>
             </article>
 
-            <article class="resto3">
-                <a href="menu_bastille.html"><img src="images/restaurants/bastille.jpg" alt="Bastille"><div class="new">New</div></a>
-                <h4 class="article_title">Bastille</h4>
+            <!--resto 3-->
+            <article class="resto__carte">
+                <a href="menu_bastille.html"><img src="images/restaurants/bastille.jpg" alt="Bastille"></a>
+                <h4 class="resto__subtitle">Bastille</h4>
                 <p>New York</p>
             </article>
 
-            <article class="resto4">
-                <a href="menu_le_gourmand.html"><img src="images/restaurants/le_gourmand.jpg" alt="Le Gourmand"><div class="new">New</div></a>
-                <h4 class="article_title">Le Gourmand</h4>
+            <!--resto 4-->
+            <article class="resto__carte">
+                <a href="menu_le_gourmand.html"><img src="images/restaurants/le_gourmand.jpg" alt="Le Gourmand"></a>
+                <h4 class="resto__subtitle">Le Gourmand</h4>
                 <p>New York</p>
             </article>
         </section>
@@ -68,14 +77,21 @@
 
     <footer>
     <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
-        <img src="images/logo/ohmyfood.png" alt="ohmyfood" srcset="images/logo/ohmyfood@2x.svg">
+        <img src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
 
-        <nav class="menu_footer">
+        <nav class="footnav">
             <ul>
-                <li>Suggest a retaurant</li>
-                <li>Become a partner</li>
-                <li>Legal</li>
-                <li>Contact</li>
+                <!--suggest-->
+                <li class="footnav__link footnav__icon"><a href=""><img src="images/icons/utensils-solid.svg" alt="utensils"> Suggest a retaurant</a></li>
+
+                <!--become-->
+                <li class="footnav__link footnav__icon"><a href=""><img src="images/icons/hands-helping-solid.svg" alt="hands-helping"> Become a partner</a></li>
+
+                <!--legal-->
+                <li class="footnav__link"><a href="">Legal</a></li>
+
+                <!--contact-->
+                <li class="footnav__link"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
         </nav>
     </footer>
