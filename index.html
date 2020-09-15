@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    <header>
+    <header class="heading">
         <!--contient le logo, l'icone de localisation, la ville avec le cartier, le titre principal, la présentation de la société et un bouton d'accès aux restaurants-->
 
         <!-- <img src="images/logo/ohmyfood.png" alt="ohmyfood" srcset="images/logo/ohmyfood@2x.svg"> -->
-        <h1>ohmyfood</h1>
-        <div class="heading_location">
+        <h1 class="heading__logo">ohmyfood</h1>
+        <div class="heading__location">
             <p><img src="images/icons/map-marker-alt-solid.svg" alt="Paris, Belleville" class="icon_location">Paris, Belleville</p>
         </div>
 
-        <h2 class="heading_title">Book the menu you like</h2>
+        <h2 class="heading__title">Book the menu you like</h2>
 
         <p>Discover top-of-the-art restaurants we <br>picked for you</p>
 
-        <button class="heading_btn"><strong>Explore our restaurants</strong></button>
+        <button class="heading__btn"><strong>Explore our restaurants</strong></button>
     </header>
 
     <main>
@@ -43,33 +43,33 @@
 
         <section class="resto">
         <!--contient l'ensemble des restaurants-->
-            <h4 class="resto__title">Restaurants</h4>
+            <h3 class="resto__title">Restaurants</h3>
 
             <!--resto 1-->
             <article class="resto__carte">
-                <a href="menu_the_full_palette.html"><img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette"><aside class="new">New</aside></a>
-                <h3 class="resto__subtitle">The Full Palette</h3>
+                <a href="menu_the_full_palette.html"><img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette"><aside class="resto__new">New</aside></a>
+                <h4 class="resto__subtitle">The Full Palette</h4><div class="resto__heart1 resto__heart2"></div>
                 <p>New York</p>
             </article>
 
             <!--resto 2-->
             <article class="resto__carte">
-                <a href="menu_the_enchanted_plate.html"><img src="images/restaurants/the_enchanted_plate.jpg" alt="The Enchanted Plate"><div class="new">New</div></a>
-                <h4 class="resto__subtitle">The Enchanted Plate</h4>
+                <a href="menu_the_enchanted_plate.html"><img src="images/restaurants/the_enchanted_plate.jpg" alt="The Enchanted Plate"><aside class="resto__new">New</aside></a>
+                <h4 class="resto__subtitle">The Enchanted Plate</h4><div class="resto__heart1 resto__heart2"></div>
                 <p>New York</p>
             </article>
 
             <!--resto 3-->
             <article class="resto__carte">
                 <a href="menu_bastille.html"><img src="images/restaurants/bastille.jpg" alt="Bastille"></a>
-                <h4 class="resto__subtitle">Bastille</h4>
+                <h4 class="resto__subtitle">Bastille</h4><div class="resto__heart1 resto__heart2"></div>
                 <p>New York</p>
             </article>
 
             <!--resto 4-->
             <article class="resto__carte">
                 <a href="menu_le_gourmand.html"><img src="images/restaurants/le_gourmand.jpg" alt="Le Gourmand"></a>
-                <h4 class="resto__subtitle">Le Gourmand</h4>
+                <h4 class="resto__subtitle">Le Gourmand</h4><div class="resto__heart1 resto__heart2"></div>
                 <p>New York</p>
             </article>
         </section>
@@ -78,7 +78,7 @@
     <footer>
     <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
         <img src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
-
+        
         <nav class="footnav">
             <ul>
                 <!--suggest-->
