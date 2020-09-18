@@ -1,0 +1,75 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$backg1: #f6f6f6ff;
+$backg2: #eaeaeaff;
+$fontcol: white;
+
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family:"Roboto_Black";
+    src: url("fonts/roboto_black/Roboto-Black.eot?") format("eot"),
+         url("fonts/roboto_black/Roboto-Black.woff") format("woff"),
+         url("fonts/roboto_black/Roboto-Black.ttf") format("truetype"),
+         url("fonts/roboto_black/Roboto-Black.svg#Roboto-Black") format("svg");
+    font-weight:normal;
+    font-style:normal;}
+body {
+    margin: auto;
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+    font-family: roboto_black;
+}
+*{box-sizing: border-box;}
+
+h1 {
+    font-family: shrikhandregular;
+    font-size:1.8em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    }
+
+h5 {
+    font-family: shrikhandregular;
+    font-size:1em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $fontcol;
+}
+
+.bloc {
+    background: $backg1;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;;
+}   
+.heading__location {
+    width: 100%;
+    background: $backg2;
+    padding: 0.1em;
+    text-align: center;
+    font-size: 1em;
+        &__icon {
+            width: 12px;
+            margin-right: 12px;
+        }
+}
+
+.heading__btn {
+    background: linear-gradient(to top, $primary, $secondary);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    color: $fontcol;
+    font-size: 0.9em;
+    width: 200px;
+}
+
