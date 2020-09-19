@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -13,16 +13,17 @@
         <!--contient le logo, l'icone de localisation, la ville avec le cartier, le titre principal, la présentation de la société et un bouton d'accès aux restaurants-->
 
         <!-- <img src="images/logo/ohmyfood.png" alt="ohmyfood" srcset="images/logo/ohmyfood@2x.svg"> -->
-        <h1 class="heading__logo">ohmyfood</h1>
+        <h1>ohmyfood</h1>
         <div class="heading__location">
-            <p><img src="images/icons/map-marker-alt-solid.svg" alt="Paris, Belleville" class="icon_location">Paris, Belleville</p>
+            <p><img src="images/icons/map-marker-alt-solid.svg" alt="Paris, Belleville" class="heading__location__icon">Paris, Belleville</p>
         </div>
+        <div class="bloc">
+            <h2 class="heading__title">Book     the menu you like</h2>
 
-        <h2 class="heading__title">Book the menu you like</h2>
+            <p>Discover top-of-the-art  restaurants we picked for you</  p>
 
-        <p>Discover top-of-the-art restaurants we <br>picked for you</p>
-
-        <button class="heading__btn"><strong>Explore our restaurants</strong></button>
+            <button     class="heading__btn"><strong>Explore our restaurants</strong></button>
+        </div>
     </header>
 
     <main>
@@ -32,13 +33,13 @@
             <h3 class="how__title">How it works</h3>
 
             <!--bouton chose-->
-            <div class="how__numb"><div>1</div><button class="how__btn how__btn--hover"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon"><strong>Chose a restaurant</strong></button></div>
+            <div class="how__numb"><div>1</div><button class="how__btn"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon"><strong>Chose a restaurant</strong></button></div>
 
             <!--bouton create-->
-            <div class="how__numb"><div>2</div><button class="how__btn how__btn--hover"><img src="images/icons/list-ul-solid.svg" alt="liste icon"><strong>Create your menu</strong></button></div>
+            <div class="how__numb"><div>2</div><button class="how__btn"><img src="images/icons/list-ul-solid.svg" alt="liste icon"><strong>Create your menu</strong></button></div>
 
             <!--bouton go enjoy-->
-            <div class="how__numb"><div>3</div><button class="how__btn how__btn--hover"><img src="images/icons/store-solid.svg" alt="store icon"><strong>Go enjoy it at the restaurant</strong></button></div>
+            <div class="how__numb"><div>3</div><button class="how__btn"><img src="images/icons/store-solid.svg" alt="store icon"><strong>Go enjoy it at the restaurant</strong></button></div>
         </section>
 
         <section class="resto">
@@ -77,7 +78,9 @@
 
     <footer>
     <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
-        <img src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
+    
+        <!--<img src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg"> -->
+        <h5>ohmyfood</h5>
         
         <nav class="footnav">
             <ul>

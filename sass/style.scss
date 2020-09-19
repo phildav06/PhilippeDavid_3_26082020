@@ -71,5 +71,15 @@ h5 {
     color: $fontcol;
     font-size: 0.9em;
     width: 200px;
+    box-shadow: 0 2px 5px darken($backg2, 30%);
 }
 
+@mixin button-style {
+    margin: auto;
+    background: $backg1;
+    border: none;
+    border-radius: 15px;
+}
+    .how__btn {
+        @include button-style;
+    }

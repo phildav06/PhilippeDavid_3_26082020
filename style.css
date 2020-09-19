@@ -66,6 +66,14 @@ h5 {
   color: white;
   font-size: 0.9em;
   width: 200px;
+  box-shadow: 0 2px 5px #9e9e9e;
+}
+
+.how__btn {
+  margin: auto;
+  background: #f6f6f6ff;
+  border: none;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
