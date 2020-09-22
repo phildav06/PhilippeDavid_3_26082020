@@ -11,7 +11,7 @@
   font-style: normal;
 }
 body {
-  margin: auto;
+  margin: 0 auto;
   font-size: 14px;
   padding: 0;
   width: 100%;
@@ -38,13 +38,11 @@ h5 {
   color: white;
 }
 
-.bloc {
-  background: #f6f6f6ff;
-  padding: 10px 20px;
-  position: relative;
-  text-align: center;
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
 }
-
 .heading__location {
   width: 100%;
   background: #eaeaeaff;
@@ -57,23 +55,123 @@ h5 {
   margin-right: 12px;
 }
 
-.heading__btn {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+.heading__Bloc {
+  background: #f6f6f6ff;
+  padding: 10px 50px;
+  text-align: center;
+}
+.heading__Bloc .heading__btn {
+  background-color: #9356DC;
+  background-image: linear-gradient(to bottom, #FF79DA, rgba(255, 255, 255, 0));
+  transition: background-color 0.5s;
+  box-shadow: 0 2px 5px #9e9e9e;
   border-radius: 20px;
   border: none;
   padding: 15px;
-  margin-top: 20px;
   color: white;
   font-size: 0.9em;
   width: 200px;
-  box-shadow: 0 2px 5px #9e9e9e;
+  margin-bottom: 30px;
+}
+.heading__Bloc .heading__btn:hover {
+  background-color: #ae80e5;
+  box-shadow: 0 2px 8px #1e1e1e;
+}
+
+.heading__bloc h2 {
+  font-weight: 100;
+}
+
+.how {
+  margin: 20px 10px 0;
+}
+
+.how__tittle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.how__but {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 95%;
+  margin: auto;
+}
+
+.how__numb {
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  background-color: #9356DC;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+.how__icon {
+  width: 15px;
+  left: 15px;
+  margin-right: 35px;
+  position: relative;
 }
 
 .how__btn {
-  margin: auto;
-  background: #f6f6f6ff;
-  border: none;
+  width: 100%;
+  height: 60px;
   border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  text-align: center;
+  box-shadow: 0 2px 8px #9e9e9e;
+}
+.how__btn:hover {
+  background-color: #ffdff6;
+  box-shadow: 0 2px 8px #1e1e1e;
+}
+
+.resto {
+  margin-top: 50px;
+  background: #f6f6f6ff;
+  padding: 20px 10px 0;
+}
+.resto__carte img {
+  width: 100%;
+  height: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.resto__carte img__subtitle {
+  padding: 30px 0 0;
+  margin-top: 50px;
+}
+.resto__carte img .resto__legendary {
+  background: white;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+}
+
+.resto__new {
+  background-color: #99e2d0ff;
+  text-align: center;
+  width: 80px;
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #278870;
+  position: absolute;
+  left: 270px;
+  bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
