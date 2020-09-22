@@ -74,7 +74,7 @@ h5 {
   margin-bottom: 30px;
 }
 .heading__Bloc .heading__btn:hover {
-  background-color: #ae80e5;
+  background-image: linear-gradient(to bottom, #fface8, #ae80e5);
   box-shadow: 0 2px 8px #1e1e1e;
 }
 
@@ -83,7 +83,7 @@ h5 {
 }
 
 .how {
-  margin: 20px 10px 0;
+  margin: 20px 15px 0;
 }
 
 .how__tittle {
@@ -141,24 +141,40 @@ h5 {
 .resto {
   margin-top: 50px;
   background: #f6f6f6ff;
-  padding: 20px 10px 0;
+  padding: 20px 15px 0;
 }
-.resto__carte img {
+
+.resto__image__1 {
+  background-image: url(images/restaurants/the_full_palette.jpg);
   width: 100%;
-  height: 50%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 220px;
   border-radius: 15px 15px 0 0;
+  background-size: cover;
 }
-.resto__carte img__subtitle {
-  padding: 30px 0 0;
-  margin-top: 50px;
+
+.resto__image__2 {
+  background-image: url(images/restaurants/the_enchanted_plate.jpg);
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-position-y: 60%;
+  background-size: cover;
 }
-.resto__carte img .resto__legendary {
-  background: white;
-  border-radius: 0 0 15px 15px;
-  position: absolute;
+
+.resto__image__3 {
+  background-image: url(images/restaurants/bastille.jpg);
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+}
+
+.resto__image__4 {
+  background-image: url(images/restaurants/le_gourmand.jpg);
+  width: 100%;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
 }
 
 .resto__new {
@@ -167,11 +183,12 @@ h5 {
   width: 80px;
   padding: 3px;
   border-radius: 3px;
+  border: none;
   text-decoration: none;
   color: #278870;
-  position: absolute;
-  left: 270px;
-  bottom: 100px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
