@@ -19,7 +19,9 @@
    sodipodi:docname="utensils-solid.svg"
    width="50"
    height="61.539001"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <style
+     id="style830"></style>
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -43,20 +45,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1001"
+     inkscape:window-width="1106"
      inkscape:window-height="480"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.4609375"
-     inkscape:cx="-62.101695"
-     inkscape:cy="256"
+     inkscape:zoom="0.39237316"
+     inkscape:cx="153.08715"
+     inkscape:cy="185.81246"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
   <path
      d="m 24.987981,1.82746 c 0.09615,0.56491 1.935096,11.35817 1.935096,15.48077 0,6.28606 -3.341346,10.76923 -8.28125,12.57212 l 1.550481,28.61778 c 0.08413,1.64664 -1.225962,3.04087 -2.884616,3.04087 H 9.6153846 c -1.6466346,0 -2.96875,-1.38221 -2.8846154,-3.04087 L 8.28125,29.88035 C 3.3293269,28.07746 0,23.58227 0,17.30823 0,13.17362 1.8389423,2.39237 1.9350962,1.82746 2.3197115,-0.61244 7.3798077,-0.6485 7.6923077,1.95967 v 16.97116 c 0.15625,0.40865 1.8149038,0.38461 1.9230769,0 0.1682692,-3.04087 0.9495194,-16.73077 0.9615384,-17.04327 0.396635,-2.5 5.372596,-2.5 5.757212,0 0.02404,0.32452 0.793269,14.0024 0.961538,17.04327 0.108173,0.38461 1.778846,0.40865 1.923077,0 V 1.95967 c 0.3125,-2.59615 5.384615,-2.57211 5.769231,-0.13221 z M 39.314904,36.1664 37.512019,58.414 c -0.144231,1.68269 1.189904,3.125 2.872596,3.125 h 6.73077 C 48.713942,61.539 50,60.25294 50,58.65438 V 2.88515 C 50,1.29862 48.713942,5.4e-4 47.115385,5.4e-4 c -9.915866,0 -26.610577,21.45433 -7.800481,36.16586 z"
      id="path2"
      inkscape:connector-curvature="0"
-     style="fill:currentColor;stroke-width:0.1201923" />
+     style="fill:#ffffff;stroke-width:0.1201923" />
 </svg>

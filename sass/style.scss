@@ -118,8 +118,8 @@ h5 {
     text-align: center;
     color: white;
     border-radius: 50%;
-    position: absolute;
-    margin-bottom: 10px;
+    position: relative;
+    margin: 0 0 15px 1px;
 }//how__numb
 
 .how__icon {
@@ -160,7 +160,13 @@ h5 {
     width: 100%;
     height: 220px;
     border-radius: 15px 15px 0 0;
+    background-position-y: center;
+    background-position-x: center;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
 }
 
 .resto__image__2 {
@@ -169,7 +175,12 @@ h5 {
     height: 220px;
     border-radius: 15px 15px 0 0;
     background-position-y: 60%;
+    background-position-x: center;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
 }
 
 .resto__image__3 {
@@ -177,6 +188,8 @@ h5 {
     width: 100%;
     height: 220px;
     border-radius: 15px 15px 0 0;
+    background-position-y: 100%;
+    background-position-x: center;
     background-size: cover;
 }
 
@@ -185,6 +198,8 @@ h5 {
     width: 100%;
     height: 220px;
     border-radius: 15px 15px 0 0;
+    background-position-y: 100%;
+    background-position-x: center;
     background-size: cover;
 }
 .resto__new {
@@ -196,12 +211,32 @@ h5 {
     border: none;
     text-decoration: none;
     color: darken($bg3, 40%);
+    margin: -180px 10px 0 0;
+    position: relative;
     float: right;
-    margin-right: 15px;
-    margin-top: 10px;
+    cursor: pointer;
 }
 
+.resto__legendary {
+    margin: -10px 0 20px;
+    background-color: white;
+    z-index: 900;
+    padding: 2px 0 10px;
+    border-radius: 0 0 15px 15px;
+    & p {margin: 0 10px 10px;}
+}
 
-@mixin button-style {
+.resto__subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 0px;
+    .heart {width: 15px;}
+}
 
+.footnav__link a {
+    outline: none;
+    text-decoration: none;
+    color: white;
 }
