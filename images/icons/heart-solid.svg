@@ -14,11 +14,13 @@
    data-icon="heart"
    class="svg-inline--fa fa-heart fa-w-16"
    role="img"
-   viewBox="0 0 512 512"
+   viewBox="0 0 512 448.62"
    version="1.1"
    id="svg4"
    sodipodi:docname="heart-solid.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   width="512"
+   height="448.62">
   <style
      id="style835"></style>
   <metadata
@@ -55,7 +57,8 @@
        y1="107.22043"
        x2="-174.97778"
        y2="473.55692"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99998076,0,0,1.0013656,0.01226891,-32.010455)" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -70,16 +73,17 @@
      inkscape:window-height="877"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="1.3430276"
+     inkscape:zoom="1.300713"
      inkscape:cx="232.11024"
      inkscape:cy="256"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
   <path
      fill="currentColor"
-     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+     d="M 462.30338,30.675032 C 407.50443,-16.088742 326.006,-7.677271 275.70697,44.293604 L 256.00734,64.621326 236.30772,44.293604 C 186.10869,-7.677271 104.51026,-16.088742 49.711313,30.675032 -13.087479,84.348229 -16.387416,180.6796 39.811503,238.85894 L 233.30778,438.93179 c 12.49976,12.91762 32.79937,12.91762 45.29913,0 L 472.10319,238.85894 C 528.4021,180.6796 525.10217,84.348229 462.30338,30.675032 Z"
      id="path2"
-     style="fill:url(#linearGradient843);fill-opacity:1" />
+     style="fill:url(#linearGradient843);fill-opacity:1;stroke-width:1.00067" />
 </svg>

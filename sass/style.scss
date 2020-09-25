@@ -1,3 +1,4 @@
+//colors
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
@@ -5,14 +6,17 @@ $bg1: #f6f6f6ff;
 $bg2: #eaeaeaff;
 $bg3: #99e2d0ff;
 $bg4: white;
-$font-Colore: white;
+$bg5: #353535ff;
+$font-Color: white;
 
+//fonts
 @font-face {font-family:"shrikhandregular";
     src: url('fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
          url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 
 @font-face {
     font-family: 'robotobold';
@@ -108,7 +112,7 @@ h2 h3 h4 {font-family:robotobold;}
         border-radius: 20px;
         border: none;
         padding: 15px;
-        color: $font-Colore;
+        color: $font-Color;
         font-size: 0.9em;
         width: 200px;
         margin-bottom: 30px;
@@ -184,8 +188,17 @@ h2 h3 h4 {font-family:robotobold;}
 .resto {
     margin-top: 50px;
     background: $bg1;
-    padding: 20px 15px 0;
-}
+    padding: 20px 15px 30px 15px;
+
+    &__carte {
+        border-radius: 15px;
+    box-shadow: 0 2px 8px darken($bg2, 30%);
+    }//resto__carte
+        &__carte:hover {
+            box-shadow: 0 2px 8px darken($bg2, 80%);
+            border-radius: 15px;
+        }//resto__carte hover
+}//resto
 
 .resto__image__1 {
     background-image: url(images/restaurants/the_full_palette.jpg);
@@ -199,7 +212,7 @@ h2 h3 h4 {font-family:robotobold;}
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-}
+}//resto__image__1
 
 .resto__image__2 {
     background-image: url(images/restaurants/the_enchanted_plate.jpg);
@@ -213,7 +226,7 @@ h2 h3 h4 {font-family:robotobold;}
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-}
+}//resto__image__2
 
 .resto__image__3 {
     background-image: url(images/restaurants/bastille.jpg);
@@ -223,7 +236,7 @@ h2 h3 h4 {font-family:robotobold;}
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
-}
+}//resto__image__3
 
 .resto__image__4 {
     background-image: url(images/restaurants/le_gourmand.jpg);
@@ -233,7 +246,8 @@ h2 h3 h4 {font-family:robotobold;}
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
-}
+}//resto__image__4
+
 .resto__new {
     background-color: $bg3;
     text-align: center;
@@ -247,7 +261,7 @@ h2 h3 h4 {font-family:robotobold;}
     position: relative;
     float: right;
     cursor: pointer;
-}
+}//resto__new
 
 .resto__legendary {
     margin: -10px 0 20px;
@@ -255,7 +269,7 @@ h2 h3 h4 {font-family:robotobold;}
     padding: 2px 0 10px;
     border-radius: 0 0 15px 15px;
     & p {margin: 0 10px 10px;}
-}
+}//resto__legendary
 
 .resto__subtitle {
     display: flex;
@@ -264,10 +278,28 @@ h2 h3 h4 {font-family:robotobold;}
     justify-content: space-between;
     margin: 10px 10px 0px;
     .heart {width: 15px;}
-}
+}//resto__subtitle
 
-.footnav__link a {
-    outline: none;
-    text-decoration: none;
-    color: white;
-}
+footer {
+    background-color: $bg5;
+    padding: 40px 20px 20px 20px;
+    .foot__logo {
+        width: 8em
+    }//foot__logo
+}//footer
+
+.footnav {
+    margin-left: -40px;
+    &__link {
+        list-style-type: none;
+        line-height: 30px;
+        & a {
+            color: $font-Color;
+            text-decoration: none;
+            & img {
+                width: 12px;
+                margin-right: 5px;
+            }//footnav__link img
+        }//footnav__link a
+    }//footnav__link   
+}//footnav
