@@ -11,92 +11,100 @@
 <body>
     <header>
         <!--contient la flèche retour, le logo et l'image du resto 1-->
-        <a href="index.html"><img src="images/icons/arrow-left-solid.svg" alt="arrow icon"></a>
-        <h1>ohmyfood</h1>
+        <div class="heading__restos"><a href="index.html"><img src="images/icons/arrow-left-solid.svg" alt="arrow icon"></a>
+        <h1>ohmyfood</h1></div>
 
-        <img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette" class="resto__1">
+        <img src="images/restaurants/the_full_palette.jpg" alt="The Full Palette" class="heading__image__1">
     </header>
 
     <main>
     <!--contient l'ensemble des sections-->
+        <div class="menu">
+            <h2 class="menu__title">The Full Palette</h2><div class="heart1 heart2"></div>
+            <!--Entrées-->
+            <section>
+                <h3 class="menu__dish"><span>ENTR</span>EES</h3>
 
-        <h2 class="menu">The Full Palette</h2><div class="heart1 heart2"></div>
-        <!--Entrées-->
-        <section>
-            <h3 class="menu__dish">ENTREES</h3>
+                <article>
+                    <div class="description">
+                        <div class="descrition__global">
+                            <h4 class="description__subtitle">Escargot</h4>
+                            <div class="description__ingredients">
+                                <p>with southem French spices</p>
+                                <div class="price">25€</div>
+                            </div>
+                        </div>
+                        <div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                    </div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Escargot</h4>
-                <p>with southem French spices</p>
-                <div class="price">25€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Duck Foie Gras</h4>
+                    <p>with black truffle shavings</p>
+                    <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Duck Foie Gras</h4>
-                <p>with black truffle shavings</p>
-                <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Fried egg</h4>
+                    <p>...</p>
+                    <div class="price">20€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
+            </section>
 
-            <article>
-                <h4 class="menu__subtitle">Fried egg</h4>
-                <p>...</p>
-                <div class="price">20€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
-        </section>
+            <!--Plats-->
+            <section>
+                <h3 class="menu__dish"><span>MAIN</span> DISH</h3>
 
-        <!--Plats-->
-        <section>
-            <h3 class="menu__dish">MAIN DISH</h3>
+                <article>
+                    <h4 class="menu__subtitle">Herb-Encrusted Steak</h4>
+                    <p>with delicately sliced and seasoned<br>vegetables</p>
+                    <div class="price">40€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Herb-Encrusted Steak</h4>
-                <p>with delicately sliced and seasoned<br>vegetables</p>
-                <div class="price">40€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Ox Tail Shepard's Pie</h4>
+                    <p>with black truffle and pureed parsnips</p>
+                    <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Ox Tail Shepard's Pie</h4>
-                <p>with black truffle and pureed parsnips</p>
-                <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Filet of Sole</h4>
+                    <p>with ctrus dressing</p>
+                    <div class="price">44€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
+            </section>
 
-            <article>
-                <h4 class="menu__subtitle">Filet of Sole</h4>
-                <p>with ctrus dressing</p>
-                <div class="price">44€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
-        </section>
+            <!--Desserts-->
+            <section>
+                <h3 class="menu__dish"><span>DESS</span>ERTS</h3>
 
-        <!--Desserts-->
-        <section>
-            <h3 class="menu__dish">DESSERTS</h3>
+                <article>
+                    <h4 class="menu__subtitle">Paris-Brest</h4>
+                    <p>Revisited</p>
+                    <div class="price">18€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Paris-Brest</h4>
-                <p>Revisited</p>
-                <div class="price">18€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Chocolate Macaroons</h4>
+                    <p>with vanilla ice cream</p>
+                    <div class="price">22€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
 
-            <article>
-                <h4 class="menu__subtitle">Chocolate Macaroons</h4>
-                <p>with vanilla ice cream</p>
-                <div class="price">22€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
+                <article>
+                    <h4 class="menu__subtitle">Chocolate Mousse</h4>
+                    <p>with spices and black truffle</p>
+                    <div class="price">23€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
+                </article>
+            </section>
 
-            <article>
-                <h4 class="menu__subtitle">Chocolate Mousse</h4>
-                <p>with spices and black truffle</p>
-                <div class="price">23€</div><div class="check_icon"><img src="images/icons/check-circle-regular.svg" alt="check icon"></div>
-            </article>
-        </section>
-
-        <!--Bouton pour passer commande-->
-        <button class="btn__order btn__order--hover"><strong>Order</strong></button>
+            <!--Bouton pour passer commande-->
+            <button class="btn__order btn__order--hover"><strong>Order</strong></button>
+        </div>
     </main>
 
     <footer>
         <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
-        <img src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
+        <img class="foot__logo" src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
     
          <nav class="footnav">
             <ul>
