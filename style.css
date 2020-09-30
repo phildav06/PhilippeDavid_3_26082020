@@ -250,9 +250,6 @@ h2 h3 h4 {
   justify-content: space-between;
   margin: 10px 10px 0px;
 }
-.resto__subtitle .heart {
-  width: 15px;
-}
 
 footer {
   background-color: #353535ff;
@@ -329,6 +326,10 @@ footer .foot__logo {
   margin-top: -40px;
   border-radius: 40px 40px 0 0;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .menu__title {
   font-family: shrikhandregular;
@@ -337,6 +338,10 @@ footer .foot__logo {
 }
 .menu__dish span {
   text-decoration: underline 2px #99E2D0;
+}
+
+.heart {
+  width: 1.2rem;
 }
 
 .description {
