@@ -8,9 +8,10 @@ $bg2: #eaeaeaff;
 $bg3: #353535ff;
 
 //fonts
-@font-face {font-family:"shrikhandregular";
+@font-face {
+    font-family: "shrikhandregular";
     src: url('fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
-         url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
+        url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,10 +21,10 @@ $bg3: #353535ff;
     font-family: 'robotobold';
     src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot');
     src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2') format('woff2'),
-         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
-         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
-         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
+        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2') format('woff2'),
+        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
+        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,10 +33,10 @@ $bg3: #353535ff;
     font-family: 'robotolight';
     src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
     src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff2') format('woff2'),
-         url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
-         url('fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
-         url('fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
+        url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff2') format('woff2'),
+        url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
+        url('fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
+        url('fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,15 +45,17 @@ $bg3: #353535ff;
     font-family: 'robotomedium';
     src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot');
     src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff') format('woff'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
+        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff') format('woff'),
+        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
+        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 // HOME PAGE______________________________________
-body {//body--------------------------------------
+body {
+    //body--------------------------------------
     margin: 0 auto;
     font-size: 14px;
     padding: 0;
@@ -60,41 +63,39 @@ body {//body--------------------------------------
     font-family: robotolight;
 }//end body---------------------------------------
 
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 h1 {
     font-family: shrikhandregular;
-    font-size:1.8em;
+    font-size: 1.8em;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-    }//end h1
+}//end h1
 
-
-h2 h3 h4 {font-family:robotobold;}
-/*h5 {
-    font-family: shrikhandregular;
-    font-size:1em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: $quaternarye;
-}//end h5*/
+h2 h3 h4 {
+    font-family: robotobold;
+}//end h2 h3 h4
 
 //header------------------------------------------
 .heading {
     display: flex;
     flex-direction: column;
     align-items: space-between;
+
     &__location {
         width: 100%;
         background: $bg2;
         padding: 0.1em;
         text-align: center;
         font-size: 1em;
-            &__icon {
-                width: 12px;
-                margin-right: 12px;
-            }//end icon
+
+        &__icon {
+            width: 12px;
+            margin-right: 12px;
+        }//end icon
     }//end location
 }//end heading
 
@@ -102,24 +103,27 @@ h2 h3 h4 {font-family:robotobold;}
     background: $bg1;
     padding: 10px 50px;
     text-align: center;
-    .heading__btn {
-        background-color: $primary;
-        background-image: linear-gradient(to bottom, $secondary, rgba(255,255,255,0));
-        transition: background-color 0.5s;
-        box-shadow: 0 2px 5px darken($bg2, 30%);
-        border-radius: 20px;
-        border: none;
-        padding: 15px;
-        color: $quaternary;
-        font-size: 0.9em;
-        width: 200px;
-        margin-bottom: 30px;
-        &:hover {
-            background-image: linear-gradient(to bottom, lighten($secondary,10%), lighten($primary, 10%));
-            box-shadow: 0 2px 8px darken($bg2, 80%);
-        }//end hover
-    }//end btn
-} //end bloc
+}//end bloc
+
+.btn {
+    background-color: $primary;
+    background-image: linear-gradient(to bottom, $secondary, rgba(255, 255, 255, 0));
+    transition: background-color 0.5s;
+    box-shadow: 0 2px 5px darken($bg2, 30%);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    color: $quaternary;
+    font-size: 0.9em;
+    width: 200px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, lighten($secondary, 10%), lighten($primary, 10%));
+        box-shadow: 0 2px 8px darken($bg2, 80%);
+    }//end hover
+}//end btn
 
 .heading__bloc h2 {
     font-weight: 100;
@@ -176,6 +180,8 @@ h2 h3 h4 {font-family:robotobold;}
     border: none;
     text-align: center;
     box-shadow: 0 2px 8px darken($bg2, 30%);
+    cursor: pointer;
+
     &:hover {
         background-color: lighten($secondary, 20%);
         box-shadow: 0 2px 8px darken($bg2, 80%);
@@ -192,10 +198,11 @@ h2 h3 h4 {font-family:robotobold;}
         border-radius: 15px;
         box-shadow: 0 2px 8px darken($bg2, 30%);
     }//resto__carte
-        &__carte:hover {
-            box-shadow: 0 2px 8px darken($bg2, 80%);
-            border-radius: 15px;
-        }//resto__carte hover
+
+    &__carte:hover {
+        box-shadow: 0 2px 8px darken($bg2, 80%);
+        border-radius: 15px;
+    }//resto__carte hover
 }//resto
 
 .resto__image__1 {
@@ -210,6 +217,10 @@ h2 h3 h4 {font-family:robotobold;}
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
+    &:hover {
+        opacity: 0.5;
+    }//resto__image__1:hover
 }//resto__image__1
 
 .resto__image__2 {
@@ -224,6 +235,10 @@ h2 h3 h4 {font-family:robotobold;}
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
+    &:hover {
+        opacity: 0.5;
+    }//resto__image__2:hover
 }//resto__image__2
 
 .resto__image__3 {
@@ -234,6 +249,10 @@ h2 h3 h4 {font-family:robotobold;}
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
+
+    &:hover {
+        opacity: 0.5;
+    }//resto__image__3:hover
 }//resto__image__3
 
 .resto__image__4 {
@@ -244,6 +263,11 @@ h2 h3 h4 {font-family:robotobold;}
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
+
+    &:hover {
+        opacity: 0.5;
+    }//resto__image__4:hover
+
 }//resto__image__4
 
 .resto__new {
@@ -266,7 +290,12 @@ h2 h3 h4 {font-family:robotobold;}
     background-color: $quaternary;
     padding: 2px 0 10px;
     border-radius: 0 0 15px 15px;
-    & p {margin: 0 10px 10px;}
+    position: -webkit-sticky;
+    position: sticky;
+
+    & p {
+        margin: 0 10px 10px;
+    }//resto__legendary p
 }//resto__legendary
 
 .resto__subtitle {
@@ -280,6 +309,7 @@ h2 h3 h4 {font-family:robotobold;}
 footer {
     background-color: $bg3;
     padding: 40px 20px 20px 20px;
+
     .foot__logo {
         width: 8rem
     }//foot__logo
@@ -287,12 +317,15 @@ footer {
 
 .footnav {
     margin-left: -40px;
+
     &__link {
         list-style-type: none;
         line-height: 30px;
+
         & a {
             color: $quaternary;
             text-decoration: none;
+
             & img {
                 width: 12px;
                 margin-right: 5px;
@@ -301,12 +334,17 @@ footer {
     }//footnav__link   
 }//footnav
 
-//PAGES RESTOS
+//PAGES RESTOS________________________________________
+.Body {
+    background: $bg1;
+}//Body
+
 .heading__restos {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
     & img {
         width: 20px;
         margin: 0 80px 0 20px;
@@ -357,52 +395,89 @@ justify-content: flex-start;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-        &__title {
-            font-family: shrikhandregular;
-            font-size:1.5em;
-            text-align: left;
-        }//menu__title
-        &__dish span {
-            text-decoration: underline 2px $tertiary;
-        }//menu__dish
+
+    &__title {
+        font-family: shrikhandregular;
+        font-size: 1.5em;
+        text-align: left;
+    }//menu__title
+
+    &__dish span {
+        -webkit-text-decoration: underline 2px $tertiary;
+        text-decoration: underline 2px $tertiary;
+    }//menu__dish
+
+    &__group {
+        padding: 0 10px 30px 10px;
+        position: relative;
+        margin-top: -35px;
+    }//menu__group
 }//menu
-.heart {width: 1.2rem;}
+
+.heart {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url("images/icons/heart-regular.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url("images/icons/heart-solid.svg");
+    }//heart:hover
+}//heart
 
 .description {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: left;
     background: $quaternary;
     border-radius: 15px;
     padding-left: 10px;
     width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px darken($bg2, 30%);
+
+    &:hover {
+        box-shadow: 0 2px 8px darken($bg2, 80%);
+    }//description:hover
+
     &__global {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
+        width: 100%;
+    }//description__global
+
+    &__subtitle {
+        margin: 10px 0 0 0;
+    }//descriptio__subtitle
 }//description
+
 .description__ingredients {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    height: 0px;
-    }//ingredients
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 75%;
+
+    & p {
+        overflow: auto;
+        text-overflow: ellipsis;
+    }//description__ingredients
+}//ingredients
 
 .check_icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 80px;
+    width: 4em;
+    height: 100%;
+    float: right;
+    margin-left: 20px;
     background: $tertiary;
-    position: relative;
     border-radius: 0 15px 15px 0;
-    right: -129px;
-    & img {width: 20px;}
-}
+    cursor: pointer;
+
+    & img {
+        width: 20px;
+    }//img  
+}//check_icon
 
