@@ -17,84 +17,128 @@
         <img src="images/restaurants/le_gourmand.jpg" alt="Le Gourmand" class="heading__image__4">
     </header>
 
-    <main>
-    <!--contient l'ensemble des sections-->
-        <div class="menu">
-            <h2 class="menu__title">Le Gourmand</h2><div class="heart"></div>
-        </div>
-            <!--Entrées-->
-            <section>
-                <h3 class="menu__dish">ENTREES</h3>
-
-                <article>
-                    <h4 class="menu__subtitle">Tuna Carpaccio</h4>
-                    <p>seasoned with yuzu</p>
-                    <div class="price">25€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Crunchy Lobster Croquets</h4>
-                    <p>with seasonal vegetables</p>
-                    <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Mushroom soup</h4>
-                    <p>with truffles</p>
-                    <div class="price">20€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-            </section>
-
-            <!--Plats-->
-            <section>
-                <h3 class="menu__dish">MAIN DISH</h3>
-
-                <article>
-                    <h4 class="menu__subtitle">Roast Chicken with Provincal Herbs</h4>
-                    <p>with truffle cream</p>
-                    <div class="price">40€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Roasted Lobster</h4>
-                    <p>with seasonal vegetables</p>
-                    <div class="price">35€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Angust Beef Ribs</h4>
-                    <p>with mashed parshnips</p>
-                    <div class="price">44€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-            </section>
-
-            <!--Desserts-->
-            <section>
-                <h3 class="menu__dish">DESSERTS</h3>
-
-                <article>
-                    <h4 class="menu__subtitle">Assorted Dessert Plate</h4>
-                    <p>Chef's choice</p>
-                    <div class="price">18€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Crème bruléee</h4>
-                    <p>Revisited</p>
-                    <div class="price">22€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-
-                <article>
-                    <h4 class="menu__subtitle">Tiramisu</h4>
-                    <p>with hazeinuts</p>
-                    <div class="price">23€</div><div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
-                </article>
-            </section>
-
-            <!--Bouton pour passer commande-->
-            <button class="btn__order btn__order--hover"><strong>Order</strong></button>
-        </div>
-    </main>
+    <main class="Body">
+        <!--contient l'ensemble des sections-->
+            <div class="menu">
+                <h2 class="menu__title">Le Gourmand</h2><div class="heart"></div>
+            </div>
+                <!--Entrées-->
+                <section class="menu__group">
+                    <h3 class="menu__dish"><span>ENTR</span>EES</h3>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Tuna Carpaccio</h4>
+                            <div class="description__ingredients">
+                                <p>seasoned with yuzu</p>
+                                <div class="price">25€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Crunchy Lobster Croquets</h4>
+                            <div class="description__ingredients">
+                                <p>with seasonal vegetables</p>
+                                <div class="price">35€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Mushroom Soup</h4>
+                            <div class="description__ingredients">
+                                <p>with truffles</p>
+                                <div class="price">20€</div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+    
+                <!--Plats-->
+                <section class="menu__group">
+                    <h3 class="menu__dish"><span>MAIN</span> DISH</h3>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Roast Chicken with Provincal Herbs</h4>
+                            <div class="description__ingredients">
+                                <p>with truffle cream</p>
+                                <div class="price">40€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Roasted Lobster</h4>
+                            <div class="description__ingredients">
+                                <p>with seasoned vegetables</p>
+                                <div class="price">35€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Angust Beef Ribs</h4>
+                            <div class="description__ingredients">
+                                <p>with mashed parsnips</p>
+                                <div class="price">44€</div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+    
+                <!--Desserts-->
+                <section class="menu__group">
+                    <h3 class="menu__dish"><span>DESS</span>ERTS</h3>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Assorted Dessert Plate</h4>
+                            <div class="description__ingredients">
+                                <p>Chef's choice</p>
+                                <div class="price">18€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Crème brulée</h4>
+                            <div class="description__ingredients">
+                                <p>Revisited</p>
+                                <div class="price">22€</div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="description">
+                        <div class="description__global">
+                            <div class="check_icon"><img src="images/icons/check-circle-solid.svg" alt="check icon"></div>
+                            <h4 class="description__subtitle">Tiramisu</h4>
+                            <div class="description__ingredients">
+                                <p>with hazelnuts</p>
+                                <div class="price">23€</div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+    
+                <!--Bouton pour passer commande-->
+                <button class="btn"><strong>Order</strong></button>
+        </main>
 
     <footer>
         <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->

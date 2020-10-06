@@ -3,9 +3,9 @@ $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $quaternary: white;
-$bg1: #f6f6f6ff;
-$bg2: #eaeaeaff;
-$bg3: #353535ff;
+$bg1: #F6F6F6FF;
+$bg2: #EAEAEA;
+$bg3: #353535FF;
 
 //fonts
 @font-face {
@@ -54,6 +54,7 @@ $bg3: #353535ff;
 }
 
 // HOME PAGE______________________________________
+
 body {
     //body--------------------------------------
     margin: 0 auto;
@@ -61,11 +62,11 @@ body {
     padding: 0;
     width: 100%;
     font-family: robotolight;
-}//end body---------------------------------------
+}//end Body
 
 * {
     box-sizing: border-box;
-}
+}// end box sizing
 
 h1 {
     font-family: shrikhandregular;
@@ -83,7 +84,7 @@ h2 h3 h4 {
 .heading {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    //align-items: space-between;
 
     &__location {
         width: 100%;
@@ -100,10 +101,13 @@ h2 h3 h4 {
 }//end heading
 
 .heading__Bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: $bg1;
     padding: 10px 50px;
     text-align: center;
-}//end bloc
+}//end heading bloc
 
 .btn {
     background-color: $primary;
@@ -117,7 +121,7 @@ h2 h3 h4 {
     font-size: 0.9em;
     width: 200px;
     margin-bottom: 30px;
-    cursor: pointer;
+    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
     &:hover {
         background-image: linear-gradient(to bottom, lighten($secondary, 10%), lighten($primary, 10%));
@@ -127,17 +131,17 @@ h2 h3 h4 {
 
 .heading__bloc h2 {
     font-weight: 100;
-}//heading__bloc h2-------------------------------
+}//end heading__bloc
 
 //section how-------------------------------------
 .how {
     margin: 20px 15px 0;
-}//how
+}//end how
 
 .how__tittle {
     margin-top: 20px;
     margin-bottom: 10px;
-}//how__tittle
+}//end how__tittle
 
 .how__but {
     display: flex;
@@ -145,8 +149,7 @@ h2 h3 h4 {
     align-items: center;
     justify-content: flex-start;
     width: 95%;
-    margin: auto;
-}//how__but
+}//end how__but
 
 .how__numb {
     width: 20px;
@@ -158,14 +161,14 @@ h2 h3 h4 {
     border-radius: 50%;
     position: relative;
     margin: 0 0 15px 1px;
-}//how__numb
+}//end how__numb
 
 .how__icon {
     width: 15px;
     left: 15px;
     margin-right: 35px;
     position: relative;
-}//how__icon
+}//end how__icon
 
 .how__btn {
     width: 100%;
@@ -180,15 +183,31 @@ h2 h3 h4 {
     border: none;
     text-align: center;
     box-shadow: 0 2px 8px darken($bg2, 30%);
-    cursor: pointer;
+    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
     &:hover {
         background-color: lighten($secondary, 20%);
         box-shadow: 0 2px 8px darken($bg2, 80%);
-    }//hover how__btn
-}//how__btn--------------------------------------
+    }//end hover how__btn
+}//end how__btn--------------------------------------
 
 //section resto----------------------------------
+a {
+    color: black;
+    text-decoration: none;
+    &:link {
+    text-decoration: none;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+}
 .resto {
     margin-top: 50px;
     background: $bg1;
@@ -197,13 +216,14 @@ h2 h3 h4 {
     &__carte {
         border-radius: 15px;
         box-shadow: 0 2px 8px darken($bg2, 30%);
-    }//resto__carte
+    }//end resto__carte
 
     &__carte:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
         border-radius: 15px;
-    }//resto__carte hover
-}//resto
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end resto__carte hover
+}//end resto
 
 .resto__image__1 {
     background-image: url(images/restaurants/the_full_palette.jpg);
@@ -220,8 +240,9 @@ h2 h3 h4 {
 
     &:hover {
         opacity: 0.5;
-    }//resto__image__1:hover
-}//resto__image__1
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end resto__image__1:hover
+}//end resto__image__1
 
 .resto__image__2 {
     background-image: url(images/restaurants/the_enchanted_plate.jpg);
@@ -238,8 +259,9 @@ h2 h3 h4 {
 
     &:hover {
         opacity: 0.5;
-    }//resto__image__2:hover
-}//resto__image__2
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end resto__image__2:hover
+}//end resto__image__2
 
 .resto__image__3 {
     background-image: url(images/restaurants/bastille.jpg);
@@ -252,8 +274,9 @@ h2 h3 h4 {
 
     &:hover {
         opacity: 0.5;
-    }//resto__image__3:hover
-}//resto__image__3
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end resto__image__3:hover
+}//end resto__image__3
 
 .resto__image__4 {
     background-image: url(images/restaurants/le_gourmand.jpg);
@@ -266,9 +289,9 @@ h2 h3 h4 {
 
     &:hover {
         opacity: 0.5;
-    }//resto__image__4:hover
-
-}//resto__image__4
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end resto__image__4:hover
+}//end resto__image__4
 
 .resto__new {
     background-color: $tertiary;
@@ -279,11 +302,10 @@ h2 h3 h4 {
     border: none;
     text-decoration: none;
     color: darken($tertiary, 40%);
-    margin: -180px 10px 0 0;
+    margin: -290px 10px 0 0;
     position: relative;
     float: right;
-    cursor: pointer;
-}//resto__new
+}//end resto__new
 
 .resto__legendary {
     margin: -10px 0 20px;
@@ -295,8 +317,8 @@ h2 h3 h4 {
 
     & p {
         margin: 0 10px 10px;
-    }//resto__legendary p
-}//resto__legendary
+    }//end resto__legendary p
+}//end resto__legendary
 
 .resto__subtitle {
     display: flex;
@@ -304,7 +326,7 @@ h2 h3 h4 {
     align-items: center;
     justify-content: space-between;
     margin: 10px 10px 0px;
-}//resto__subtitle
+}//end resto__subtitle
 
 footer {
     background-color: $bg3;
@@ -312,8 +334,8 @@ footer {
 
     .foot__logo {
         width: 8rem
-    }//foot__logo
-}//footer
+    }//end foot__logo
+}//end footer
 
 .footnav {
     margin-left: -40px;
@@ -325,65 +347,67 @@ footer {
         & a {
             color: $quaternary;
             text-decoration: none;
+            cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
             & img {
                 width: 12px;
                 margin-right: 5px;
-            }//footnav__link img
-        }//footnav__link a
-    }//footnav__link   
-}//footnav
+            }//end footnav__link img
+        }//end footnav__link a
+    }//end footnav__link   
+}//end footnav
 
 //PAGES RESTOS________________________________________
 .Body {
     background: $bg1;
-}//Body
+}//end Body
 
 .heading__restos {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     & img {
         width: 20px;
-        margin: 0 80px 0 20px;
-        position: relative;
-        top: 8px;
-    }//img
-}//heading__restos
+        position: absolute;
+        top: 35px;
+        left: 20px;
+        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    }//end img
+}//end heading__restos
 
 .heading__image__1 {
     width: 100%;
-    height: 250px;
+    height: 15em;
     background-position-y: center;
     background-position-x: center;
     background-size: cover;
-}//heading__image__1
+}//end heading__image__1
 
 .heading__image__2 {
     width: 100%;
-    height: 250px;
+    height: 15em;
     background-position-y: 60%;
     background-position-x: center;
     background-size: cover;
-}//heading__image__2
+}//end heading__image__2
 
 .heading__image__3 {
     width: 100%;
-    height: 250px;
+    height: 15em;
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
-}//heading__image__3
+}//end heading__image__3
 
 .heading__image__4 {
     width: 100%;
-    height: 250px;
+    height: 15em;
     background-position-y: 100%;
     background-position-x: center;
     background-size: cover;
-}//heading__image__4
+}//end heading__image__4
 
 .menu {
     background: $bg1;
@@ -400,19 +424,18 @@ footer {
         font-family: shrikhandregular;
         font-size: 1.5em;
         text-align: left;
-    }//menu__title
+    }//end menu__title
 
     &__dish span {
-        -webkit-text-decoration: underline 2px $tertiary;
-        text-decoration: underline 2px $tertiary;
-    }//menu__dish
+        border-bottom: 2px solid $tertiary;
+    }//end menu__dish
 
     &__group {
         padding: 0 10px 30px 10px;
         position: relative;
         margin-top: -35px;
-    }//menu__group
-}//menu
+    }//end menu__group
+}//end menu
 
 .heart {
     width: 1.2rem;
@@ -420,12 +443,12 @@ footer {
     background-image: url("images/icons/heart-regular.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: pointer;
+    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
     &:hover {
         background-image: url("images/icons/heart-solid.svg");
-    }//heart:hover
-}//heart
+    }//end heart:hover
+}//end heart
 
 .description {
     display: flex;
@@ -433,51 +456,71 @@ footer {
     border-radius: 15px;
     padding-left: 10px;
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px darken($bg2, 30%);
+    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+
+    &:hover .check_icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 5.5em;
+        height: 100%;
+        float: right;
+        background: $tertiary;
+        border-radius: 0 15px 15px 0;
+        & img {
+            width: 20px;
+            transform: rotate(1turn);
+            transition: transform 500ms ease-in-out;
+        }//end img
+    }//end description:hover
 
     &:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
-    }//description:hover
+        transition: transform 500ms ease-in-out;
+    }//end hover
 
     &__global {
         width: 100%;
-    }//description__global
+        height: auto;
+    }//end description__global
 
     &__subtitle {
         margin: 10px 0 0 0;
-    }//descriptio__subtitle
-}//description
+    }//end descriptio__subtitle
+}//end description
 
 .description__ingredients {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 75%;
+    height: auto;
 
-    & p {
-        overflow: auto;
+    .price {
+        margin-right: 15px; 
+    }//end price
+
+    p {
         text-overflow: ellipsis;
-    }//description__ingredients
-}//ingredients
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+    }//end description__ingredients
+}//end ingredients
 
 .check_icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 4em;
-    height: 100%;
+    transition: width 500ms  ease-in-out;
+    width: 0;
     float: right;
-    margin-left: 20px;
-    background: $tertiary;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
+    // display: none;
 
     & img {
-        width: 20px;
-    }//img  
-}//check_icon
+        width: 0px;
+    }//end img
+}//end check_icon
 
