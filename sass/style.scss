@@ -314,6 +314,7 @@ a {
     border-radius: 0 0 15px 15px;
     position: -webkit-sticky;
     position: sticky;
+    cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 
     & p {
         margin: 0 10px 10px;
@@ -434,6 +435,8 @@ footer {
         padding: 0 10px 30px 10px;
         position: relative;
         margin-top: -35px;
+        transition: 1s;
+        animation: slide 2s;
     }//end menu__group
 }//end menu
 
@@ -474,13 +477,11 @@ footer {
         & img {
             width: 20px;
             transform: rotate(1turn);
-            transition: transform 500ms ease-in-out;
         }//end img
     }//end description:hover
 
     &:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
-        transition: transform 500ms ease-in-out;
     }//end hover
 
     &__global {
@@ -492,6 +493,17 @@ footer {
         margin: 10px 0 0 0;
     }//end descriptio__subtitle
 }//end description
+
+.check_icon {
+    transition: width 500ms ease-in-out;
+    width: 0;
+    float: right;
+    
+    & img {
+        width: 0px;
+        transition: width 500ms ease-in-out;
+    }//end img
+}//end check_icon
 
 .description__ingredients {
     display: flex;
@@ -513,14 +525,21 @@ footer {
     }//end description__ingredients
 }//end ingredients
 
-.check_icon {
-    transition: width 500ms  ease-in-out;
-    width: 0;
-    float: right;
-    // display: none;
+.order {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    & img {
-        width: 0px;
-    }//end img
-}//end check_icon
-
+@keyframes slide {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
