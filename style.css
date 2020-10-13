@@ -382,6 +382,9 @@ footer .foot__logo {
   padding: 0 10px 30px 10px;
   position: relative;
   margin-top: -35px;
+  transition: 1s;
+  -webkit-animation: slide 2s;
+  animation: slide 2s;
 }
 
 .heart {
@@ -421,11 +424,9 @@ footer .foot__logo {
 .description:hover .check_icon img {
   width: 20px;
   transform: rotate(1turn);
-  transition: transform 500ms ease-in-out;
 }
 .description:hover {
   box-shadow: 0 2px 8px #1e1e1e;
-  transition: transform 500ms ease-in-out;
 }
 .description__global {
   width: 100%;
@@ -433,6 +434,16 @@ footer .foot__logo {
 }
 .description__subtitle {
   margin: 10px 0 0 0;
+}
+
+.check_icon {
+  transition: width 500ms ease-in-out;
+  width: 0;
+  float: right;
+}
+.check_icon img {
+  width: 0px;
+  transition: width 500ms ease-in-out;
 }
 
 .description__ingredients {
@@ -453,13 +464,33 @@ footer .foot__logo {
   padding-right: 10px;
 }
 
-.check_icon {
-  transition: width 500ms ease-in-out;
-  width: 0;
-  float: right;
+.order {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.check_icon img {
-  width: 0px;
+
+@-webkit-keyframes slide {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

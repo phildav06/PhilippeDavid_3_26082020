@@ -436,7 +436,8 @@ footer {
         position: relative;
         margin-top: -35px;
         transition: 1s;
-        animation: slide 2s;
+        -webkit-animation: slide 2s;
+                animation: slide 2s;
     }//end menu__group
 }//end menu
 
@@ -505,6 +506,7 @@ footer {
     }//end img
 }//end check_icon
 
+
 .description__ingredients {
     display: flex;
     flex-direction: row;
@@ -531,6 +533,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@-webkit-keyframes slide {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide {
