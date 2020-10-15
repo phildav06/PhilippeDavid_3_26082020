@@ -119,7 +119,7 @@ h2 h3 h4 {
     padding: 15px;
     color: $quaternary;
     font-size: 0.9em;
-    width: 200px;
+    width: 50vw;
     margin-bottom: 30px;
     cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
@@ -212,6 +212,9 @@ a {
     margin-top: 50px;
     background: $bg1;
     padding: 20px 15px 30px 15px;
+    transition: 1s;
+    -webkit-animation: slide 2s;
+    animation: slide 2s;
 
     &__carte {
         border-radius: 15px;
@@ -381,33 +384,29 @@ footer {
 .heading__image__1 {
     width: 100%;
     height: 15em;
-    background-position-y: center;
-    background-position-x: center;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }//end heading__image__1
 
 .heading__image__2 {
     width: 100%;
     height: 15em;
-    background-position-y: 60%;
-    background-position-x: center;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }//end heading__image__2
 
 .heading__image__3 {
     width: 100%;
     height: 15em;
-    background-position-y: 100%;
-    background-position-x: center;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }//end heading__image__3
 
 .heading__image__4 {
     width: 100%;
     height: 15em;
-    background-position-y: 100%;
-    background-position-x: center;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }//end heading__image__4
 
 .menu {
@@ -464,26 +463,21 @@ footer {
     margin-bottom: 20px;
     box-shadow: 0 2px 8px darken($bg2, 30%);
     cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
-
-    &:hover .check_icon{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 5.5em;
-        height: 100%;
-        float: right;
-        background: $tertiary;
-        border-radius: 0 15px 15px 0;
-        & img {
-            width: 20px;
-            transform: rotate(1turn);
-        }//end img
-    }//end description:hover
-
+    
     &:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
-    }//end hover
+    }//end description hover
+
+    &:hover .check_icon{
+        width: 5.5em;
+        height: 100%;
+        border-radius: 0 15px 15px 0;
+
+        & img {
+            width: 20px;
+            transform: rotate(360deg);
+        }//end img
+    }//end check_icon hover
 
     &__global {
         width: 100%;
@@ -496,13 +490,20 @@ footer {
 }//end description
 
 .check_icon {
-    transition: width 500ms ease-in-out;
+    background: $tertiary;
     width: 0;
+    height: 100%;
     float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 500ms ease-in-out;
     
     & img {
         width: 0px;
-        transition: width 500ms ease-in-out;
+        transform: rotate(0turn);
+        transition: 500ms ease-in-out;
     }//end img
 }//end check_icon
 
