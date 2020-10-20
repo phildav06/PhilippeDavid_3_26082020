@@ -60,7 +60,7 @@ body {
     margin: 0 auto;
     font-size: 14px;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     font-family: robotolight;
 }//end Body
 
@@ -119,7 +119,7 @@ h2 h3 h4 {
     padding: 15px;
     color: $quaternary;
     font-size: 0.9em;
-    width: 50vw;
+    width: 55vw;
     margin-bottom: 30px;
     cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
@@ -249,51 +249,17 @@ a {
 
 .resto__image__2 {
     background-image: url(images/restaurants/the_enchanted_plate.jpg);
-    width: 100%;
-    height: 220px;
-    border-radius: 15px 15px 0 0;
-    background-position-y: 60%;
-    background-position-x: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-
-    &:hover {
-        opacity: 0.5;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
-    }//end resto__image__2:hover
+    @extend .resto__image__1;
 }//end resto__image__2
 
 .resto__image__3 {
     background-image: url(images/restaurants/bastille.jpg);
-    width: 100%;
-    height: 220px;
-    border-radius: 15px 15px 0 0;
-    background-position-y: 100%;
-    background-position-x: center;
-    background-size: cover;
-
-    &:hover {
-        opacity: 0.5;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
-    }//end resto__image__3:hover
+    @extend .resto__image__1;
 }//end resto__image__3
 
 .resto__image__4 {
     background-image: url(images/restaurants/le_gourmand.jpg);
-    width: 100%;
-    height: 220px;
-    border-radius: 15px 15px 0 0;
-    background-position-y: 100%;
-    background-position-x: center;
-    background-size: cover;
-
-    &:hover {
-        opacity: 0.5;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
-    }//end resto__image__4:hover
+    @extend .resto__image__1;
 }//end resto__image__4
 
 .resto__new {
@@ -384,29 +350,37 @@ footer {
 .heading__image__1 {
     width: 100%;
     height: 15em;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }//end heading__image__1
 
 .heading__image__2 {
     width: 100%;
     height: 15em;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }//end heading__image__2
 
 .heading__image__3 {
     width: 100%;
     height: 15em;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }//end heading__image__3
 
 .heading__image__4 {
     width: 100%;
     height: 15em;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }//end heading__image__4
 
 .menu {
@@ -534,7 +508,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}//end order
 
 @-webkit-keyframes slide {
     from {
@@ -545,7 +519,7 @@ footer {
         transform: translateY(0);
         opacity: 1;
     }
-}
+}//end slide
 
 @keyframes slide {
     from {
@@ -556,4 +530,72 @@ footer {
         transform: translateY(0);
         opacity: 1;
     }
-}
+}//end slide
+
+//Loading spinner____________________________
+.bgb {
+	background-color: darken($bg2, 75%);
+	width: 100vw;
+    height: 100vh;
+
+    .loading {
+    	-webkit-animation: b1 2s linear infinite;
+    	        animation: b1 2s linear infinite;
+    	position: fixed;
+    	width: 100px;
+        height: 100px;
+        top: 40%;
+        z-index: 9999;
+    }//end .loading
+
+    .loading-spinner1 {
+    	border-top: 10px solid #9356DC;
+    	width: 100px;
+    	height: 100px;
+    	position: absolute;
+    	box-sizing: border-box;
+        border-radius: 45%;
+    	}//end .loading-spinner1
+
+    .loading-spinner2 {
+    	border-top: 6px solid #99E2D0;
+    	@extend .loading-spinner1;
+    	transform: rotate(120deg);
+    }//end .loading-spinner2
+
+    .loading-spinner3 {
+    	border-top: 8px solid #FF79DA;
+    	@extend .loading-spinner1;
+    	transform: rotate(240deg);
+    }//end .loading-spinner3
+
+    span {
+    	position: absolute;
+    	width: 100px;
+    	height: 100px;
+    	color: white;
+        text-align: center;
+        font-size: 0.7em;
+    	line-height: 100px;
+    	-webkit-animation: b2 2s linear infinite both;
+    	        animation: b2 2s linear infinite both;
+    	TOP: -10PX;
+    	text-shadow: -1px 1px 2px black
+    }//end span
+    
+    @-webkit-keyframes b1 {
+    	to {transform: rotate(360deg)}
+    }
+    
+    @keyframes b1 {
+    	to {transform: rotate(360deg)}
+    }
+
+    @-webkit-keyframes b2 {
+    	to {transform: rotate(-360deg)}
+    }
+
+    @keyframes b2 {
+    	to {transform: rotate(-360deg)}
+    }
+}//end bgb

@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
   font-size: 14px;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   font-family: robotolight;
 }
 
@@ -84,7 +84,7 @@ h2 h3 h4 {
   padding: 15px;
   color: white;
   font-size: 0.9em;
-  width: 50vw;
+  width: 55vw;
   margin-bottom: 30px;
   cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
@@ -188,7 +188,7 @@ a:active {
   cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
-.resto__image__1 {
+.resto__image__1, .resto__image__4, .resto__image__3, .resto__image__2 {
   background-image: url(images/restaurants/the_full_palette.jpg);
   width: 100%;
   height: 220px;
@@ -201,55 +201,21 @@ a:active {
   align-items: center;
   justify-content: flex-end;
 }
-.resto__image__1:hover {
+.resto__image__1:hover, .resto__image__4:hover, .resto__image__3:hover, .resto__image__2:hover {
   opacity: 0.5;
   cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
 .resto__image__2 {
   background-image: url(images/restaurants/the_enchanted_plate.jpg);
-  width: 100%;
-  height: 220px;
-  border-radius: 15px 15px 0 0;
-  background-position-y: 60%;
-  background-position-x: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-.resto__image__2:hover {
-  opacity: 0.5;
-  cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
 .resto__image__3 {
   background-image: url(images/restaurants/bastille.jpg);
-  width: 100%;
-  height: 220px;
-  border-radius: 15px 15px 0 0;
-  background-position-y: 100%;
-  background-position-x: center;
-  background-size: cover;
-}
-.resto__image__3:hover {
-  opacity: 0.5;
-  cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
 .resto__image__4 {
   background-image: url(images/restaurants/le_gourmand.jpg);
-  width: 100%;
-  height: 220px;
-  border-radius: 15px 15px 0 0;
-  background-position-y: 100%;
-  background-position-x: center;
-  background-size: cover;
-}
-.resto__image__4:hover {
-  opacity: 0.5;
-  cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
 .resto__new {
@@ -333,28 +299,36 @@ footer .foot__logo {
 .heading__image__1 {
   width: 100%;
   height: 15em;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
 .heading__image__2 {
   width: 100%;
   height: 15em;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
 .heading__image__3 {
   width: 100%;
   height: 15em;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
 .heading__image__4 {
   width: 100%;
   height: 15em;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -490,6 +464,69 @@ footer .foot__logo {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+.bgb {
+  background-color: #2b2b2b;
+  width: 100vw;
+  height: 100vh;
+}
+.bgb .loading {
+  -webkit-animation: b1 2s linear infinite;
+  animation: b1 2s linear infinite;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  z-index: 9999;
+}
+.bgb .loading-spinner1, .bgb .loading-spinner3, .bgb .loading-spinner2 {
+  border-top: 10px solid #9356DC;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 45%;
+}
+.bgb .loading-spinner2 {
+  border-top: 6px solid #99E2D0;
+  transform: rotate(120deg);
+}
+.bgb .loading-spinner3 {
+  border-top: 8px solid #FF79DA;
+  transform: rotate(240deg);
+}
+.bgb span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 100px;
+  -webkit-animation: b2 2s linear infinite both;
+  animation: b2 2s linear infinite both;
+  TOP: -10PX;
+  text-shadow: -1px 1px 2px black;
+}
+@-webkit-keyframes b1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes b1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes b2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes b2 {
+  to {
+    transform: rotate(-360deg);
   }
 }
 

@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
+    <div class="bgb">
+	    <div class="loading">
+	    	<span>Loading...</span>
+	    	<div class="loading-spinner1"></div>
+	    	<div class="loading-spinner2"></div>
+	    	<div class="loading-spinner3"></div>
+        </div>
+    </div>
     <header class="heading">
         <!--contient le logo, l'icone de localisation, la ville avec le cartier, le titre principal, la présentation de la société et un bouton d'accès aux restaurants-->
 
@@ -18,11 +26,11 @@
             <p><img src="images/icons/map-marker-alt-solid.svg" alt="Paris, Belleville" class="heading__location__icon">Paris, Belleville</p>
         </div>
         <div class="heading__Bloc">
-            <h2 class="heading__title">Book the menu you like</h2>
+            <h2 class="heading__title">Réservez le menu qui vous convient</h2>
 
-            <p>Discover top-of-the-art restaurants we picked for you</p>
+            <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
 
-            <button class="btn"><strong>Explore our restaurants</strong></button>
+            <button class="btn"><strong>Explorer nos restaurants</strong></button>
         </div>
     </header>
 
@@ -30,26 +38,26 @@
     <!--contient l'ensemble des sections-->
         <section class="how"><!--how_it_works-->
         <!--c'est l'explication du fonctionnement du site-->
-            <h3 class="how__title">How it works</h3>
+            <h3 class="how__title">Fonctionnement</h3>
 
             <!--bouton chose-->
             <div class="how__but">    
                 <div class="how__numb">1</div>
-                <button class="how__btn"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon" class="how__icon"><strong>Chose a restaurant</strong>
+                <button class="how__btn"><img src="images/icons/mobile-alt-solid.svg" alt="mobile phone icon" class="how__icon"><strong>Choisissez un restaurant</strong>
                 </button>
             </div>
 
             <!--bouton create-->
             <div class="how__but">
                 <div class="how__numb">2</div>
-                <button class="how__btn"><img src="images/icons/list-ul-solid.svg" alt="liste icon" class="how__icon"><strong>Create your menu</strong>
+                <button class="how__btn"><img src="images/icons/list-ul-solid.svg" alt="liste icon" class="how__icon"><strong>Composez votre menu</strong>
                 </button>
             </div>
 
             <!--bouton go enjoy-->
             <div class="how__but">
                 <div class="how__numb">3</div>
-                <button class="how__btn"><img src="images/icons/store-solid.svg" alt="store icon" class="how__icon"><strong>Go enjoy it at the restaurant</strong>
+                <button class="how__btn"><img src="images/icons/store-solid.svg" alt="store icon" class="how__icon"><strong>Dégustez au restaurant</strong>
                 </button>
             </div>
         </section>
@@ -60,11 +68,11 @@
 
             <!--resto 1-->
             <article class="resto__carte">
-                <a href="menu_the_full_palette.html">
+                <a href="menu_la_palette_du_gout.html">
                     <div class="resto__image__1"></div>
                     <div class="resto__legendary">
-                        <h4 class="resto__subtitle">The Full Palette<i class="heart"></i></h4>
-                        <p>New York</p>
+                        <h4 class="resto__subtitle">La palette du goût<i class="heart"></i></h4>
+                        <p>Ménilmontant</p>
                     </div>
                 </a>
                 <button class="resto__new">New</button>
@@ -72,11 +80,11 @@
 
             <!--resto 2-->
             <article class="resto__carte">
-                <a href="menu_the_enchanted_plate.html">
+                <a href="menu_la_note_enchantee.html">
                     <div class="resto__image__2"></div>
                     <div class="resto__legendary">
-                        <h4 class="resto__subtitle">The Enchanted Plate<i class="heart"></i></h4>
-                        <p>New York</p>
+                        <h4 class="resto__subtitle">La note enchantée<i class="heart"></i></h4>
+                        <p>Charonne</p>
                     </div>
                 </a>
                 <button class="resto__new">New</button>
@@ -84,24 +92,24 @@
 
             <!--resto 3-->
             <article class="resto__carte">
-                <a href="menu_bastille.html">
+                <a href="menu_a_la_francaise.html">
                     <div class="resto__image__3">
                     </div>
                     <div class="resto__legendary">
-                        <h4 class="resto__subtitle">Bastille<i class="heart"></i></h4>
-                        <p>New York</p>
+                        <h4 class="resto__subtitle">À la française<i class="heart"></i></h4>
+                        <p>Cité Rouge</p>
                     </div>
                 </a>
             </article>
 
             <!--resto 4-->
             <article class="resto__carte">
-                <a href="menu_le_gourmand.html">
+                <a href="menu_le_delice_des_sens.html">
                     <div class="resto__image__4">
                     </div>
                     <div class="resto__legendary">
-                        <h4 class="resto__subtitle">Le Gourmand<i class="heart"></i></h4>
-                        <p>New York</p>
+                        <h4 class="resto__subtitle">Le délice des sens<i class="heart"></i></h4>
+                        <p>Folie-Méricourt</p>
                     </div>
                 </a>
             </article>
@@ -109,21 +117,19 @@
     </main>
 
     <footer>
-    <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
+        <!--contient la suggestion d'un restaurant, un partenariat, les mentions légales et le contact-->
+        <img class="foot__logo" src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg">
     
-        <img class="foot__logo" src="images/logo/ohmyfood-white.png" alt="ohmyfood" srcset="images/logo/ohmyfood-white.svg" href="index.html">
-        <!-- <h5>ohmyfood</h5>-->
-        
         <nav class="footnav">
             <ul>
                 <!--suggest-->
-                <li class="footnav__link "><a href=""><img src="images/icons/utensils-solid.svg" alt="utensils"> Suggest a retaurant</a></li>
+                <li class="footnav__link "><a href=""><img src="images/icons/utensils-solid.svg" alt="utensils"> Proposer un retaurant</a></li>
 
                 <!--become-->
-                <li class="footnav__link"><a href=""><img src="images/icons/hands-helping-solid.svg" alt="hands-helping"> Become a partner</a></li>
+                <li class="footnav__link"><a href=""><img src="images/icons/hands-helping-solid.svg" alt="hands-helping"> Devenir partenaire</a></li>
 
                 <!--legal-->
-                <li class="footnav__link"><a href="">Legal</a></li>
+                <li class="footnav__link"><a href="">Mentions légales</a></li>
 
                 <!--contact-->
                 <li class="footnav__link"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
