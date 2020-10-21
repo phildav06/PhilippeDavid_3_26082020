@@ -7,6 +7,9 @@ $bg1: #F6F6F6FF;
 $bg2: #EAEAEA;
 $bg3: #353535FF;
 
+//Cursor
+$Cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+
 //fonts
 @font-face {
     font-family: "shrikhandregular";
@@ -121,7 +124,7 @@ h2 h3 h4 {
     font-size: 0.9em;
     width: 55vw;
     margin-bottom: 30px;
-    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    cursor: $Cursor;
 
     &:hover {
         background-image: linear-gradient(to bottom, lighten($secondary, 10%), lighten($primary, 10%));
@@ -183,7 +186,7 @@ h2 h3 h4 {
     border: none;
     text-align: center;
     box-shadow: 0 2px 8px darken($bg2, 30%);
-    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    cursor: $Cursor;
 
     &:hover {
         background-color: lighten($secondary, 20%);
@@ -224,7 +227,7 @@ a {
     &__carte:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
         border-radius: 15px;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+        cursor: $Cursor;
     }//end resto__carte hover
 }//end resto
 
@@ -243,7 +246,7 @@ a {
 
     &:hover {
         opacity: 0.5;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+        cursor: $Cursor;
     }//end resto__image__1:hover
 }//end resto__image__1
 
@@ -283,7 +286,7 @@ a {
     border-radius: 0 0 15px 15px;
     position: -webkit-sticky;
     position: sticky;
-    cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
+    cursor: $Cursor;
 
     & p {
         margin: 0 10px 10px;
@@ -317,7 +320,7 @@ footer {
         & a {
             color: $quaternary;
             text-decoration: none;
-            cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+            cursor: $Cursor;
 
             & img {
                 width: 12px;
@@ -343,7 +346,7 @@ footer {
         position: absolute;
         top: 35px;
         left: 20px;
-        cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+        cursor: $Cursor;
     }//end img
 }//end heading__restos
 
@@ -357,30 +360,15 @@ footer {
 }//end heading__image__1
 
 .heading__image__2 {
-    width: 100%;
-    height: 15em;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    @extend .heading__image__1;
 }//end heading__image__2
 
 .heading__image__3 {
-    width: 100%;
-    height: 15em;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    @extend .heading__image__1;
 }//end heading__image__3
 
 .heading__image__4 {
-    width: 100%;
-    height: 15em;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+   @extend .heading__image__1;
 }//end heading__image__4
 
 .menu {
@@ -420,7 +408,7 @@ footer {
     background-image: url("images/icons/heart-regular.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    cursor: $Cursor;
 
     &:hover {
         background-image: url("images/icons/heart-solid.svg");
@@ -436,7 +424,7 @@ footer {
     height: auto;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px darken($bg2, 30%);
-    cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
+    cursor: $Cursor;
     
     &:hover {
         box-shadow: 0 2px 8px darken($bg2, 80%);
@@ -537,6 +525,11 @@ footer {
 	background-color: darken($bg2, 75%);
 	width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 
     .loading {
     	-webkit-animation: b1 2s linear infinite;
@@ -545,7 +538,7 @@ footer {
     	width: 100px;
         height: 100px;
         top: 40%;
-        z-index: 9999;
+        z-index: 0;
     }//end .loading
 
     .loading-spinner1 {
@@ -555,8 +548,8 @@ footer {
     	position: absolute;
     	box-sizing: border-box;
         border-radius: 45%;
-    	}//end .loading-spinner1
-
+        }//end .loading-spinner1
+        
     .loading-spinner2 {
     	border-top: 6px solid #99E2D0;
     	@extend .loading-spinner1;
@@ -575,18 +568,18 @@ footer {
     	height: 100px;
     	color: white;
         text-align: center;
-        font-size: 0.7em;
+        font-size: 0.85em;
     	line-height: 100px;
     	-webkit-animation: b2 2s linear infinite both;
     	        animation: b2 2s linear infinite both;
     	TOP: -10PX;
     	text-shadow: -1px 1px 2px black
     }//end span
-    
+
     @-webkit-keyframes b1 {
     	to {transform: rotate(360deg)}
     }
-    
+
     @keyframes b1 {
     	to {transform: rotate(360deg)}
     }

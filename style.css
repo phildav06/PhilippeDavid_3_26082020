@@ -296,34 +296,7 @@ footer .foot__logo {
   cursor: url("images/icons/hand-pointer-regular.svg"), pointer;
 }
 
-.heading__image__1 {
-  width: 100%;
-  height: 15em;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.heading__image__2 {
-  width: 100%;
-  height: 15em;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.heading__image__3 {
-  width: 100%;
-  height: 15em;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.heading__image__4 {
+.heading__image__1, .heading__image__4, .heading__image__3, .heading__image__2 {
   width: 100%;
   height: 15em;
   -o-object-fit: cover;
@@ -470,6 +443,11 @@ footer .foot__logo {
   background-color: #2b2b2b;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
 .bgb .loading {
   -webkit-animation: b1 2s linear infinite;
@@ -478,7 +456,7 @@ footer .foot__logo {
   width: 100px;
   height: 100px;
   top: 40%;
-  z-index: 9999;
+  z-index: 0;
 }
 .bgb .loading-spinner1, .bgb .loading-spinner3, .bgb .loading-spinner2 {
   border-top: 10px solid #9356DC;
@@ -502,7 +480,7 @@ footer .foot__logo {
   height: 100px;
   color: white;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.85em;
   line-height: 100px;
   -webkit-animation: b2 2s linear infinite both;
   animation: b2 2s linear infinite both;
