@@ -14,20 +14,29 @@ $Cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 @font-face {
     font-family: "shrikhandregular";
     src: url('fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
-        url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
+         url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family:"Robotoblack";
+    src:url('fonts/roboto_black/Roboto-Black.eot?') format("eot"),
+        url('fonts/roboto_black/Roboto-Black.woff') format("woff"),
+        url('fonts/roboto_black/Roboto-Black.ttf') format("truetype"),
+        url('fonts/roboto_black/Roboto-Black.svg#Roboto-Black') format("svg");
+    font-weight:normal;
+    font-style:normal;}
 
 
 @font-face {
     font-family: 'robotobold';
     src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot');
     src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2') format('woff2'),
-        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
-        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
-        url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,10 +45,9 @@ $Cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
     font-family: 'robotolight';
     src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
     src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff2') format('woff2'),
-        url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
-        url('fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
-        url('fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -48,10 +56,10 @@ $Cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
     font-family: 'robotomedium';
     src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot');
     src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
-        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff') format('woff'),
-        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
-        url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -79,7 +87,11 @@ h1 {
     margin-bottom: 10px;
 }//end h1
 
-h2 h3 h4 {
+h2 {
+    font-family: robotoblack;
+}
+
+h3 h4 {
     font-family: robotobold;
 }//end h2 h3 h4
 
@@ -116,7 +128,7 @@ h2 h3 h4 {
     background-color: $primary;
     background-image: linear-gradient(to bottom, $secondary, rgba(255, 255, 255, 0));
     transition: background-color 0.5s;
-    box-shadow: 0 2px 5px darken($bg2, 30%);
+    box-shadow: 0 2px 4px darken($bg2, 30%);
     border-radius: 20px;
     border: none;
     padding: 15px;
@@ -128,7 +140,7 @@ h2 h3 h4 {
 
     &:hover {
         background-image: linear-gradient(to bottom, lighten($secondary, 10%), lighten($primary, 10%));
-        box-shadow: 0 2px 8px darken($bg2, 80%);
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
     }//end hover
 }//end btn
 
@@ -185,12 +197,12 @@ h2 h3 h4 {
     align-items: center;
     border: none;
     text-align: center;
-    box-shadow: 0 2px 8px darken($bg2, 30%);
+    box-shadow: 0 2px 4px darken($bg2, 30%);
     cursor: $Cursor;
 
     &:hover {
         background-color: lighten($secondary, 20%);
-        box-shadow: 0 2px 8px darken($bg2, 80%);
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
     }//end hover how__btn
 }//end how__btn--------------------------------------
 
@@ -221,11 +233,11 @@ a {
 
     &__carte {
         border-radius: 15px;
-        box-shadow: 0 2px 8px darken($bg2, 30%);
+        box-shadow: 0 2px 4px darken($bg2, 30%);
     }//end resto__carte
 
     &__carte:hover {
-        box-shadow: 0 2px 8px darken($bg2, 80%);
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
         border-radius: 15px;
         cursor: $Cursor;
     }//end resto__carte hover
@@ -423,11 +435,11 @@ footer {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px darken($bg2, 30%);
+    box-shadow: 0 2px 4px darken($bg2, 30%);
     cursor: $Cursor;
     
     &:hover {
-        box-shadow: 0 2px 8px darken($bg2, 80%);
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
     }//end description hover
 
     &:hover .check_icon{
@@ -529,7 +541,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-animation: spin 150ms 4s ease-out 1 both;
+            animation: spin 150ms 4s ease-out 1 both;
 
     .loading {
     	-webkit-animation: b1 2s linear infinite;
@@ -538,7 +554,7 @@ footer {
     	width: 100px;
         height: 100px;
         top: 40%;
-        z-index: 0;
+
     }//end .loading
 
     .loading-spinner1 {
@@ -591,4 +607,18 @@ footer {
     @keyframes b2 {
     	to {transform: rotate(-360deg)}
     }
+
+    @-webkit-keyframes spin {
+        0%   {opacity: 1;}
+        70%   {opacity: 1;}
+        90%   {opacity: 0;}
+        100% {transform: translateX(-9999px);};
+      }
+
+    @keyframes spin {
+        0%   {opacity: 1;}
+        70%   {opacity: 1;}
+        90%   {opacity: 0;}
+        100% {transform: translateX(-9999px);};
+      }
 }//end bgb
