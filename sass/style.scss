@@ -54,12 +54,12 @@ $Cursor: url('images/icons/hand-pointer-regular.svg'), pointer;
 
 @font-face {
     font-family: 'robotomedium';
-    src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot');
-    src: url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.woff') format('woff'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
-         url('fonts/roboto_mrdium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    src: url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot');
+    src: url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,13 +87,6 @@ h1 {
     margin-bottom: 10px;
 }//end h1
 
-h2 {
-    font-family: robotoblack;
-}
-
-h3 h4 {
-    font-family: robotobold;
-}//end h2 h3 h4
 
 //header------------------------------------------
 .heading {
@@ -107,6 +100,7 @@ h3 h4 {
         padding: 0.1em;
         text-align: center;
         font-size: 1em;
+        font-family: robotobold;
 
         &__icon {
             width: 12px;
@@ -120,21 +114,31 @@ h3 h4 {
     flex-direction: column;
     align-items: center;
     background: $bg1;
-    padding: 10px 50px;
+    padding: 10px 30px;
     text-align: center;
+    & p {
+        margin: 10px 0 40px 0;
+        font-size: 1.3em;
+    }
 }//end heading bloc
+
+.heading__title {
+    font-family: robotomedium;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    }//end heading title
 
 .btn {
     background-color: $primary;
     background-image: linear-gradient(to bottom, $secondary, rgba(255, 255, 255, 0));
     transition: background-color 0.5s;
     box-shadow: 0 2px 4px darken($bg2, 30%);
+    width: 53vw;
     border-radius: 20px;
     border: none;
     padding: 15px;
     color: $quaternary;
     font-size: 0.9em;
-    width: 55vw;
     margin-bottom: 30px;
     cursor: $Cursor;
 
@@ -144,18 +148,15 @@ h3 h4 {
     }//end hover
 }//end btn
 
-.heading__bloc h2 {
-    font-weight: 100;
-}//end heading__bloc
-
 //section how-------------------------------------
 .how {
     margin: 20px 15px 0;
 }//end how
 
-.how__tittle {
-    margin-top: 20px;
-    margin-bottom: 10px;
+.how__title {
+    margin: 20px 0 20px 0;
+    font-family: robotomedium;
+    font-size: 1.5em;
 }//end how__tittle
 
 .how__but {
@@ -241,6 +242,11 @@ a {
         border-radius: 15px;
         cursor: $Cursor;
     }//end resto__carte hover
+
+    &__title {
+        font-family: robotomedium;
+        font-size: 1.5em;
+    }
 }//end resto
 
 .resto__image__1 {
@@ -311,6 +317,7 @@ a {
     align-items: center;
     justify-content: space-between;
     margin: 10px 10px 0px;
+    font-family: 'robotomedium';
 }//end resto__subtitle
 
 footer {
@@ -400,9 +407,13 @@ footer {
         text-align: left;
     }//end menu__title
 
+    &__dish {
+        font-weight: lighter;
+    }
+    
     &__dish span {
         border-bottom: 2px solid $tertiary;
-    }//end menu__dish
+    }//end menu__dish span
 
     &__group {
         padding: 0 10px 30px 10px;
