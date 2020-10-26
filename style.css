@@ -47,7 +47,7 @@ h1 {
   font-family: shrikhandregular;
   font-size: 1.8em;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
@@ -73,7 +73,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background: #F6F6F6FF;
-  padding: 10px 30px;
+  padding: 10px 25px;
   text-align: center;
 }
 .heading__Bloc p {
