@@ -1,0 +1,28 @@
+footer {
+    background-color: $bg3;
+    padding: 40px 20px 20px 20px;
+
+    .foot__logo {
+        width: 8rem
+    }//end foot__logo
+}//end footer
+
+.footnav {
+    margin-left: -40px;
+
+    &__link {
+        list-style-type: none;
+        line-height: 30px;
+
+        & a {
+            color: $quaternary;
+            text-decoration: none;
+            cursor: $Cursor;
+
+            & img {
+                width: 12px;
+                margin-right: 5px;
+            }//end footnav__link img
+        }//end footnav__link a
+    }//end footnav__link   
+}//end footnav

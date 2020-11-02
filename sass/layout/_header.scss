@@ -1,0 +1,48 @@
+// HOME PAGE______________________________________
+h1 {
+    font-family: shrikhandregular;
+    font-size: $FontS-regular * 1.8;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}//end h1
+
+//header------------------------------------------
+.heading {
+    display: flex;
+    flex-direction: column;
+    //align-items: space-between;
+
+    &__location {
+        width: 100%;
+        background: $bg2;
+        padding: 0.1em;
+        text-align: center;
+        font-size: $FontS-small;
+        font-family: robotobold;
+
+        &__icon {
+            width: 12px;
+            margin-right: 12px;
+        }//end icon
+    }//end location
+}//end heading
+
+.heading__Bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bg1;
+    padding: 10px 25px;
+    text-align: center;
+    & p {
+        margin: 10px 0 23px 0;
+        font-size: $FontS-regular;
+    }//end p
+}//end heading bloc
+
+.heading__title {
+    font-family: robotomedium;
+    font-size: $FontS-regular * 1.2;
+    margin-bottom: 0;
+}//end heading title

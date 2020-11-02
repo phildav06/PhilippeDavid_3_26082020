@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "shrikhandregular";
+    src: url('fonts/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('fonts/shrikhand/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Robotoblack";
+    src:url('fonts/roboto_black/Roboto-Black.eot?') format("eot"),
+        url('fonts/roboto_black/Roboto-Black.woff') format("woff"),
+        url('fonts/roboto_black/Roboto-Black.ttf') format("truetype"),
+        url('fonts/roboto_black/Roboto-Black.svg#Roboto-Black') format("svg");
+    font-weight:normal;
+    font-style:normal;}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot');
+    src: url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
+    src: url('fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot');
+    src: url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    //body--------------------------------------
+    margin: 0 auto;
+    font-size: $FontS-small;
+    padding: 0;
+    font-family: robotolight;
+}//end Body
+
+* {
+    box-sizing: border-box;
+}// end box sizing

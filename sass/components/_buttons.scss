@@ -1,0 +1,132 @@
+//Chose button
+.btn {
+    background-color: $primary;
+    background-image: linear-gradient(to bottom, $secondary, rgba(255, 255, 255, 0));
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px darken($bg2, 30%);
+    max-width: 275px;
+    min-width: 200px;
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    color: $quaternary;
+    font-size: $FontS-small;
+    margin-bottom: 35px;
+    cursor: $Cursor;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, lighten($secondary, 10%), lighten($primary, 10%));
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
+        color: darken($bg2, 5%);
+    }//end hover
+}//end btn chose
+
+//Order button
+.order {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}//end order
+
+//Heart button
+.heart {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url("images/icons/heart-regular.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    cursor: $Cursor;
+
+    &:hover {
+        background-image: url("images/icons/heart-solid.svg");
+    }//end heart:hover
+}//end heart
+
+//New button
+.resto__new {
+    background-color: $tertiary;
+    text-align: center;
+    width: 80px;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    color: darken($tertiary, 40%);
+    margin: -290px 10px 0 0;
+    position: relative;
+    float: right;
+}//end resto__new
+
+//How button
+.how__but {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    .how__numb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        background-color: $primary;
+        color: $quaternary;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 0 15px 1px;
+    }//end how__numb
+
+    .how__icon {
+        width: 15px;
+        left: 15px;
+        margin-right: 35px;
+        position: relative;
+    }//end how__icon
+
+    .how__btn {
+        width: 100%;
+        height: 60px;
+        font-size: $FontS-small;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+        text-align: center;
+        box-shadow: 0 2px 4px darken($bg2, 30%);
+        cursor: $Cursor;
+
+        &:hover {
+            background-color: lighten($secondary, 20%);
+            box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
+        }//end hover how__btn
+    }//end how__btn--------------------------------------
+}//end how__but
+
+//Check button
+.check_icon {
+    background: $tertiary;
+    width: 0;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 500ms ease-in-out;
+    
+    & img {
+        width: 0px;
+        transform: rotate(0turn);
+        transition: 500ms ease-in-out;
+    }//end img
+}//end check_icon

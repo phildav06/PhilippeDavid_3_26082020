@@ -1,0 +1,89 @@
+//Loading spinner____________________________
+.bgb {
+	background-color: darken($bg2, 75%);
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-animation: spin 150ms 4s ease-out 1 both;
+            animation: spin 150ms 4s ease-out 1 both;
+
+    .loading {
+    	-webkit-animation: b1 2s linear infinite;
+    	        animation: b1 2s linear infinite;
+    	position: fixed;
+    	width: 100px;
+        height: 100px;
+        top: 40%;
+    }//end .loading
+
+    .loading-spinner1 {
+    	border-top: 10px solid #9356DC;
+    	width: 100px;
+    	height: 100px;
+    	position: absolute;
+    	box-sizing: border-box;
+        border-radius: 45%;
+    }//end .loading-spinner1
+        
+    .loading-spinner2 {
+    	border-top: 6px solid #99E2D0;
+    	@extend .loading-spinner1;
+    	transform: rotate(120deg);
+    }//end .loading-spinner2
+
+    .loading-spinner3 {
+    	border-top: 8px solid #FF79DA;
+    	@extend .loading-spinner1;
+    	transform: rotate(240deg);
+    }//end .loading-spinner3
+
+    span {
+    	position: absolute;
+    	width: 100px;
+    	height: 100px;
+    	color: white;
+        text-align: center;
+        font-size: $FontS-small;
+    	line-height: 100px;
+    	-webkit-animation: b2 2s linear infinite both;
+    	        animation: b2 2s linear infinite both;
+    	TOP: -10PX;
+    	text-shadow: -1px 1px 2px black
+    }//end span
+
+    @-webkit-keyframes b1 {
+    	to {transform: rotate(360deg)}
+    }
+
+    @keyframes b1 {
+    	to {transform: rotate(360deg)}
+    }
+
+    @-webkit-keyframes b2 {
+    	to {transform: rotate(-360deg)}
+    }
+
+    @keyframes b2 {
+    	to {transform: rotate(-360deg)}
+    }
+
+    @-webkit-keyframes spin {
+        0%   {opacity: 1;}
+        70%   {opacity: 1;}
+        90%   {opacity: 0;}
+        100% {transform: translateY(-200%);};
+      }
+
+    @keyframes spin {
+        0%   {opacity: 1;}
+        70%   {opacity: 1;}
+        90%   {opacity: 0;}
+        100% {transform: translateY(-200%);};
+      }
+}//end bgb

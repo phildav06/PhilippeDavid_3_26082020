@@ -1,0 +1,242 @@
+//PAGES RESTOS________________________________________
+.Body {
+    background: $bg1;
+}//end Body
+
+.heading__restos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+        width: 20px;
+        position: absolute;
+        top: 35px;
+        left: 20px;
+        cursor: $Cursor;
+    }//end img
+}//end heading__restos
+
+.heading__image__1 {
+    width: 100%;
+    height: 15em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+}//end heading__image__1
+
+.heading__image__2 {
+    @extend .heading__image__1;
+}//end heading__image__2
+
+.heading__image__3 {
+    @extend .heading__image__1;
+}//end heading__image__3
+
+.heading__image__4 {
+   @extend .heading__image__1;
+}//end heading__image__4
+
+.menu {
+    background: $bg1;
+    padding: 20px 15px 30px 15px;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        font-family: shrikhandregular;
+        font-size: $FontS-regular * 1.5;
+        text-align: left;
+    }//end menu__title
+
+    &__dish {
+        font-weight: lighter;
+    }//end menu__dish
+    
+    &__dish span {
+        border-bottom: 2px solid $tertiary;
+    }//end menu__dish span
+
+    &__group {
+        padding: 0 10px 30px 10px;
+        position: relative;
+        margin-top: -35px;
+        transition: 1s;
+        -webkit-animation: slide 2s;
+                animation: slide 2s;
+    }//end menu__group
+}//end menu
+
+.description {
+    display: flex;
+    background: $quaternary;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px darken($bg2, 30%);
+    cursor: $Cursor;
+    
+    &:hover {
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
+    }//end description hover
+
+    &:hover .check_icon{
+        width: 5.5em;
+        height: 100%;
+        border-radius: 0 15px 15px 0;
+
+        & img {
+            width: 20px;
+            transform: rotate(360deg);
+        }//end img
+    }//end check_icon hover
+
+    &__global {
+        width: 100%;
+        height: auto;
+    }//end description__global
+
+    &__subtitle {
+        margin: 10px 0 0 0;
+    }//end descriptio__subtitle
+}//end description
+
+.description__ingredients {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: auto;
+
+    .price {
+        margin-right: 15px; 
+    }//end price
+
+    p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+    }//end description__ingredients
+}//end ingredients
+
+//section how-------------------------------------
+.how {
+    margin: 20px 15px 0;
+
+    .how__title {
+        margin: 30px 0 20px 0;
+        font-family: robotomedium;
+        font-size: $FontS-regular * 1.2;
+    }//end how__tittle
+}//end how
+
+//section resto----------------------------------
+a {
+    color: black;
+    text-decoration: none;
+    &:link {
+    text-decoration: none;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+}
+
+.resto {
+    margin-top: 50px;
+    background: $bg1;
+    padding: 20px 15px 30px 15px;
+    transition: 1s;
+    -webkit-animation: slide 2s;
+    animation: slide 2s;
+
+    &__carte {
+        border-radius: 15px;
+        box-shadow: 0 2px 4px darken($bg2, 30%);
+    }//end resto__carte
+
+    &__carte:hover {
+        box-shadow: 0px 0px 10px 0px darken($bg2, 80%);
+        border-radius: 15px;
+        cursor: $Cursor;
+    }//end resto__carte hover
+
+    &__title {
+        font-family: robotomedium;
+        font-size: $FontS-regular * 1.4;
+    }//end resto__title
+}//end resto
+
+.resto__image__1 {
+    background-image: url(images/restaurants/the_full_palette.jpg);
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:hover {
+        opacity: 0.5;
+        cursor: $Cursor;
+    }//end resto__image__1:hover
+}//end resto__image__1
+
+.resto__image__2 {
+    background-image: url(images/restaurants/the_enchanted_plate.jpg);
+    @extend .resto__image__1;
+}//end resto__image__2
+
+.resto__image__3 {
+    background-image: url(images/restaurants/bastille.jpg);
+    @extend .resto__image__1;
+}//end resto__image__3
+
+.resto__image__4 {
+    background-image: url(images/restaurants/le_gourmand.jpg);
+    @extend .resto__image__1;
+}//end resto__image__4
+
+.resto__legendary {
+    margin: -10px 0 20px;
+    background-color: $quaternary;
+    padding: 2px 0 10px;
+    border-radius: 0 0 15px 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    cursor: $Cursor;
+
+    & p {
+        margin: 0 10px 10px;
+    }//end resto__legendary p
+}//end resto__legendary
+
+.resto__subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 0px;
+    font-family: 'robotomedium';
+}//end resto__subtitle

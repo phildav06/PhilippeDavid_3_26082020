@@ -1,0 +1,134 @@
+//Responsive
+@media (min-width: 540px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }//end main
+
+    h1 {
+        font-size: $FontS-large * 1.5;
+        margin: 40px 0 20px 0;
+    }//end h1
+
+    .heading__location {
+        font-size: $FontS-regular;
+    }//end heading__location
+
+    .btn {
+        max-width: 250px;
+    }//end btn
+
+    .how {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 50px;
+        height: 350px;
+
+        &__title {
+            margin-top: 0;
+        }//end how__title
+
+        &__but {
+            width: 20em;
+        }//end how__but
+    }//end how__but
+
+    .resto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        
+        &__title {
+            margin: 20px 0 0 0;
+        }//end resto__title
+
+        &__carte {
+            margin: 20px;
+            height: 280px;
+            width: 25em;
+        }//end resto__carte
+    }//end resto
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }//end container
+}//end media min 540
+
+@media (min-width: 540px) and (max-width: 1063px) {
+    h1 {
+        font-size: $FontS-large;
+    }
+
+    .Body {
+        margin-top: -5px;
+
+        .menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__title {
+                font-size: $FontS-regular * 1.5;
+                margin-right: 17rem;
+            }//end menu__title
+        }//end menu
+    }//end Body
+
+    .catalog {
+        width: 540px;
+    }//end catalog
+}//end media max 1063
+
+@media (min-width: 1064px) {
+    h1 {
+        font-size: $FontS-large * 1.2;
+    }
+
+    .heading__restos img {
+        width: 30px;
+    }
+
+    .Body {
+        margin-top: -5px;
+
+        & .menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__title {
+                font-size: $FontS-regular * 1.5;
+                margin-right: 10%;
+            }//end menu__title
+        }//end menu
+    }//end Body
+
+    .catalog {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+
+        .menu__group {
+            min-width: 30%;
+            height: 100%;
+            padding: 0 30px 50px 30px;
+        }//end menu__group
+    }//end catalog
+}//end media min 1064
