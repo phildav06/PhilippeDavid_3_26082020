@@ -1,0 +1,10 @@
+@mixin animSlide {
+    animation: slide 1.5s ease-out 1s both, opacity 2s ease-in-out 0.5s both;
+        -webkit-animation: slide 1.5s ease-in-out 1s both, opacity 2s ease-in-out 0.5s both;
+}
+
+@mixin borderRadius($radius: $defaultRadius) {
+    border-radius: unitize($radius);
+    -webkit-border-radius: unitize($radius);
+    -moz-border-radius: unitize($radius);
+}
